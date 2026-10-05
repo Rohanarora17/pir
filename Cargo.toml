@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["crates/manifest-cli", "crates/protocol"]
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.85"
+repository = "https://github.com/Rohanarora17/pir"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

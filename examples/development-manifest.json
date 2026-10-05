@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "snapshot": {
+    "chain_id": 11155111,
+    "block_number": 7000000,
+    "block_hash": "0x1111111111111111111111111111111111111111111111111111111111111111",
+    "state_root": "0x2222222222222222222222222222222222222222222222222222222222222222",
+    "generation": 1
+  },
+  "contract": "0x3333333333333333333333333333333333333333",
+  "mapping_slot": "0x0000000000000000000000000000000000000000000000000000000000000003",
+  "dataset": {
+    "record_count": 1000,
+    "record_size": 4096
+  },
+  "pir": {
+    "scheme": "ikpir",
+    "parameter_set": "development",
+    "query_count": 1
+  },
+  "account_proof": [
+    "0xf801"
+  ]
+}
