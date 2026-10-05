@@ -2,7 +2,8 @@
 set -eu
 
 EXPERIMENT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-RAW_DIR="$EXPERIMENT_DIR/raw"
+OUTPUT_DIR=${OUTPUT_DIR:-$EXPERIMENT_DIR}
+RAW_DIR="$OUTPUT_DIR/raw"
 RPC_URL=${RPC_URL:-https://rpc.sepolia.ethpandaops.io}
 
 CHAIN_ID=11155111
@@ -26,6 +27,8 @@ for tool in cast curl jq openssl; do
     exit 1
   }
 done
+
+mkdir -p "$RAW_DIR"
 
 if find "$RAW_DIR" -type f -mindepth 1 -print -quit | grep -q .; then
   printf 'refusing to overwrite retained raw evidence in %s\n' "$RAW_DIR" >&2
@@ -148,6 +151,6 @@ jq -n \
   find . -type f -maxdepth 1 -print0 \
     | sort -z \
     | xargs -0 openssl dgst -sha256
-) > "$EXPERIMENT_DIR/SHA256SUMS"
+) > "$OUTPUT_DIR/SHA256SUMS"
 
 printf 'EXP-001 checks passed\n'

@@ -27,6 +27,17 @@ the pinned block.
 The address selection rule is deterministic. The retained transfer logs, source revisions and pinned
 block allow another person to reconstruct both records without private information.
 
+## Reproduce
+
+The retained `raw/` directory is immutable. Write a replay to a separate directory:
+
+```bash
+OUTPUT_DIR=/private/tmp/EXP-001-replay ./commands.sh
+```
+
+The script creates `raw/` and `SHA256SUMS` inside that directory. It refuses to overwrite files from
+an earlier run.
+
 ## Expected observations
 
 - The Uniswap token list identifies the selected address as Sepolia WETH.
