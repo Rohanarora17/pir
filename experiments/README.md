@@ -36,6 +36,11 @@ Generated corpora that are too large to commit must be reproducible from a commi
 script. The manifest records checksums for retained inputs and outputs. Synthetic results and real
 Ethereum results use separate experiment identifiers.
 
+## Registered experiments
+
+- [`EXP-001`](EXP-001-sepolia-weth-workload/): Sepolia WETH9 workload, mapping slot and first zero
+  and non-zero address cases.
+
 ## Security and privacy
 
 Never store provider API keys, credentials, signing keys, private wallet data or unredacted personal

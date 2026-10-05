@@ -8,9 +8,9 @@ workspace so the earlier Bitcoin FIBRE assignment in the parent directory remain
 ## Project status
 
 - Active phase: Phase 1, foundation, research and design lock
-- Completed checkpoint: Day 1 research scaffolding and protocol audit
-- Next checkpoint: Day 2 workload selection
-- Next investigation: selecting the Sepolia WETH workload and address corpus
+- Completed checkpoint: Day 2 Sepolia WETH workload selection
+- Next checkpoint: Day 3 block-hash pinning probe
+- Next investigation: testing exact block-hash selectors and fail-closed proof collection
 
 Progress is evidence-based. A project day advances when its artefacts and verification are complete,
 not merely when a calendar day passes. See the [`project roadmap`](docs/roadmap.md) for phase gates
@@ -27,6 +27,8 @@ fixed at the protocol layer.
 - `pvrpc-manifest` validates a manifest JSON file before it is accepted by later components.
 - `examples/development-manifest.json` is synthetic data for checking the local setup. It is not an
   authenticated Ethereum snapshot.
+- `EXP-001` selects the Uniswap-listed Sepolia WETH9 deployment, confirms mapping slot `3` and
+  retains matching zero and non-zero state reads at one pinned block.
 
 ## Run the foundation
 

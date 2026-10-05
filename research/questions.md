@@ -32,15 +32,15 @@ without private data.
 
 ### Status
 
-`open`
+`answered`
 
 ### Linked experiments
 
-None yet. Day 2 will register the first experiment.
+[`EXP-001: Sepolia WETH workload selection`](../experiments/EXP-001-sepolia-weth-workload/)
 
 ### Linked decisions
 
-None yet.
+[`ADR-001: Select the Sepolia WETH9 balance workload`](../docs/decisions/ADR-001-sepolia-weth-workload.md)
 
 ### Revisit condition
 

@@ -1,0 +1,10 @@
+{
+  "userValueHex": "0x0000000000000000000000000000000000000000000000000000000000000000",
+  "holderValueHex": "0x00000000000000000000000000000000000000000000000559e4c8956ca62d47",
+  "holderValueDecimal": "98711243076711886151",
+  "codeHash": "0xc864e10689f2da18833652a3b075d43106e87f0f90d95ee64f6f0b33bc026083",
+  "userAccountProofNodes": 9,
+  "userStorageProofNodes": 5,
+  "holderAccountProofNodes": 9,
+  "holderStorageProofNodes": 6
+}

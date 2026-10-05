@@ -83,3 +83,42 @@ limitations and linked research questions.
 - Relevant claim: CPU client builds and two Helios fixture-size measurements were reproduced locally.
 - Limitations: it is not a server query, GPU benchmark, representative corpus or consensus-light-client integration test.
 - Linked questions: `RQ-003`, `RQ-004`, `RQ-005`
+
+## SRC-009: Uniswap Sepolia token list
+
+- Type: maintained repository data
+- URL: <https://github.com/Uniswap/default-token-list/blob/b41e2b93ef284c4acc897d100e77686e531fa249/src/tokens/sepolia.json>
+- Inspected revision: `b41e2b93ef284c4acc897d100e77686e531fa249`
+- Inspected: 5 October 2026
+- Relevant claim: the list identifies `0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14` as WETH on Sepolia chain `11155111`.
+- Limitations: a token list identifies the intended integration address. It does not prove the contract storage layout or authenticate any state root.
+- Linked question: `RQ-001`
+
+## SRC-010: Uniswap WETH9 source
+
+- Type: Solidity repository source
+- URL: <https://github.com/Uniswap/v2-periphery/blob/ed24991304291297c3b4a52818d02f46a17aa9a2/contracts/test/WETH9.sol>
+- Inspected revision: `ed24991304291297c3b4a52818d02f46a17aa9a2`
+- Inspected: 5 October 2026
+- Relevant claim: WETH9 declares `name`, `symbol`, `decimals`, `balanceOf` and `allowance` in a fixed order with a direct public balance mapping.
+- Limitations: source inspection alone does not prove that a deployed contract uses the inferred slot. `EXP-001` checks the inferred slot against live contract calls and direct storage reads.
+- Linked question: `RQ-001`
+
+## SRC-011: Solidity 0.4 storage layout
+
+- Type: language documentation
+- URL: <https://docs.soliditylang.org/en/v0.4.19/miscellaneous.html#layout-of-state-variables-in-storage>
+- Inspected version: `0.4.19`
+- Inspected: 5 October 2026
+- Relevant claim: state declarations are assigned storage slots in order and a mapping value is stored at `keccak256(key . slot)`.
+- Limitations: the rule must be combined with the exact contract declarations and an observed state check.
+- Linked question: `RQ-001`
+
+## SRC-012: Circle stablecoin proxy design
+
+- Type: contract repository documentation
+- URL: <https://github.com/circlefin/stablecoin-evm/blob/master/doc/deployment.md>
+- Inspected: 5 October 2026
+- Relevant claim: Circle's FiatToken uses an implementation contract and a proxy whose storage is modified through `delegatecall`.
+- Limitations: this source explains why a USDC compatibility workload needs an additional implementation and storage-layout check. It does not evaluate a particular Sepolia USDC block.
+- Linked question: `RQ-001`

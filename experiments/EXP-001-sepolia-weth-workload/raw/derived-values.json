@@ -1,0 +1,11 @@
+{
+  "contract": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+  "blockNumber": "0xb4cd0e",
+  "blockHash": "0x9d11a05a418308f20ee690d5700d04bb23893b168a089389b89975cef3eb14e2",
+  "stateRoot": "0x7443069b0b51afdd2c7e2d8e54723a3b4fb66e8e200cdc3e96ff314589b0d5e2",
+  "mappingSlot": 3,
+  "userAddress": "0xCE54cF5a0dE3843011cF20389C1b6a4AaC442d6A",
+  "userStorageKey": "0x88080a0f7453a7e6f91b5d6e4f0c47e15d7639174219416b4e29a716c14f0857",
+  "eventDerivedHolder": "0x3289680dd4d6c10bb19b899729cda5eef58aeff1",
+  "holderStorageKey": "0x621ed32f145b61c99f199a418095340a8de179d06aead00e8739fc7ce9e27b2d"
+}

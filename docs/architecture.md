@@ -84,6 +84,8 @@ records.
 5. The client rejects records from another generation or for another key.
 6. A zero value is valid only when accompanied by a proof. No proof means failure.
 7. Unknown JSON fields and unsupported schema versions are rejected.
+8. The initial workload uses Sepolia WETH9 at
+   `0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14` and `balanceOf` mapping slot `3`.
 
 ## Next implementation slice
 
@@ -94,7 +96,6 @@ introduced.
 
 ## Decisions still open
 
-- The Sepolia WETH contract and the first address corpus.
 - The Ethereum execution client or RPC endpoint used by the snapshot builder.
 - The Rust Merkle Patricia proof library, or whether the minimal verifier should be implemented in
   the project.

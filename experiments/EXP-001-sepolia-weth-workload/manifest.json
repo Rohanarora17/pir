@@ -1,0 +1,69 @@
+{
+  "experiment_id": "EXP-001",
+  "research_questions": [
+    "RQ-001"
+  ],
+  "claim_type": "local result",
+  "software_revisions": {
+    "project_base_revision": "5b640bfea77631f81b8c3aa6dd666a2d66dd0ea8",
+    "project_tree_state": "EXP-001 files were uncommitted during the recorded run",
+    "uniswap_default_token_list": "b41e2b93ef284c4acc897d100e77686e531fa249",
+    "uniswap_v2_periphery": "ed24991304291297c3b4a52818d02f46a17aa9a2",
+    "cast": "1.2.3-Homebrew",
+    "curl": "8.7.1",
+    "jq": "1.6-159-apple-gcff5336-dirty",
+    "operating_system": "macOS 15.1 build 24B2082"
+  },
+  "machine": {
+    "model": "MacBook Pro Mac16,8",
+    "cpu": "Apple M4 Pro",
+    "logical_cores": 14,
+    "memory_gib": 24,
+    "gpu_used": false
+  },
+  "inputs": {
+    "chain_id": 11155111,
+    "block_number": 11848974,
+    "block_hash": "0x9d11a05a418308f20ee690d5700d04bb23893b168a089389b89975cef3eb14e2",
+    "state_root": "0x7443069b0b51afdd2c7e2d8e54723a3b4fb66e8e200cdc3e96ff314589b0d5e2",
+    "finality_observation": "The selected block was at or below the provider-reported finalised head during collection",
+    "contract_address": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+    "mapping_slot": 3,
+    "address_corpus_identifier": "EXP-001-two-address-v1",
+    "address_corpus_file": "raw/derived-values.json",
+    "address_corpus_sha256": "49a0c54ec71012cac71a67d92295954d5a265f90790d5eafcea6fb6e7736d05a",
+    "rpc_endpoint": "https://rpc.sepolia.ethpandaops.io",
+    "uniswap_token_list_file": "raw/uniswap-sepolia-token-list.json",
+    "uniswap_token_list_sha256": "ae04ca93505e2e0c019f10f8a5d7aec00a0834438c1faa4bfc97cbfe92bfc76e",
+    "weth_source_file": "raw/WETH9.sol",
+    "weth_source_sha256": "33f13565b207188485030aa20fd1f38d52d8c455cc64720560fb38149dcb4137"
+  },
+  "parameters": {
+    "transfer_log_window_blocks": 50,
+    "zero_case_rule": "User-declared public Sepolia address",
+    "non_zero_case_rule": "Recipient of the last WETH Transfer event in the pinned 50-block window",
+    "storage_key_rule": "keccak256(pad32(address) || pad32(3))",
+    "record_count": 2,
+    "proof_verification": "Not performed in EXP-001",
+    "consensus_authentication": "Not performed in EXP-001"
+  },
+  "metrics": [
+    {
+      "name": "value_consistency",
+      "unit": "boolean",
+      "raw_result_file": "raw/checks.json"
+    },
+    {
+      "name": "account_proof_nodes",
+      "unit": "nodes",
+      "raw_result_file": "raw/checks.json"
+    },
+    {
+      "name": "storage_proof_nodes",
+      "unit": "nodes",
+      "raw_result_file": "raw/checks.json"
+    }
+  ],
+  "started_at": "2026-10-05T19:20:16+05:30",
+  "completed_at": "2026-10-05T19:20:21+05:30"
+}
