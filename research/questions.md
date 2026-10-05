@@ -79,15 +79,15 @@ satisfy the criterion.
 
 ### Status
 
-`open`
+`answered`
 
 ### Linked experiments
 
-None yet. Day 3 will register the block-pinning probe.
+[`EXP-002: Block-hash-pinned proof collection`](../experiments/EXP-002-block-hash-pinning/)
 
 ### Linked decisions
 
-None yet.
+[`ADR-002: Require block-hash-pinned proof collection`](../docs/decisions/ADR-002-block-hash-pinned-proof-collection.md)
 
 ### Revisit condition
 

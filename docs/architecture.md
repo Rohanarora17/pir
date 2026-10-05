@@ -86,6 +86,8 @@ records.
 7. Unknown JSON fields and unsupported schema versions are rejected.
 8. The initial workload uses Sepolia WETH9 at
    `0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14` and `balanceOf` mapping slot `3`.
+9. Every proof request uses the selected block hash with EIP-1898. The collector never falls back to
+   a block number or moving tag.
 
 ## Next implementation slice
 

@@ -8,9 +8,9 @@ workspace so the earlier Bitcoin FIBRE assignment in the parent directory remain
 ## Project status
 
 - Active phase: Phase 1, foundation, research and design lock
-- Completed checkpoint: Day 2 Sepolia WETH workload selection
-- Next checkpoint: Day 3 block-hash pinning probe
-- Next investigation: testing exact block-hash selectors and fail-closed proof collection
+- Completed checkpoint: Day 3 block-hash-pinned proof collection
+- Next checkpoint: Day 4 first real proof corpus
+- Next investigation: defining corpus completeness and checking every proof response against one snapshot context
 
 Progress is evidence-based. A project day advances when its artefacts and verification are complete,
 not merely when a calendar day passes. See the [`project roadmap`](docs/roadmap.md) for phase gates
@@ -29,6 +29,8 @@ fixed at the protocol layer.
   authenticated Ethereum snapshot.
 - `EXP-001` selects the Uniswap-listed Sepolia WETH9 deployment, confirms mapping slot `3` and
   retains matching zero and non-zero state reads at one pinned block.
+- `EXP-002` compares EIP-1898 `eth_getProof` behaviour across four public Sepolia endpoints and
+  establishes the fail-closed block-hash selector rule.
 
 ## Run the foundation
 

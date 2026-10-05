@@ -1,0 +1,76 @@
+{
+  "experiment_id": "EXP-002",
+  "research_questions": [
+    "RQ-002"
+  ],
+  "claim_type": "local result",
+  "software_revisions": {
+    "project_base_revision": "9250f1222381cc938500e5b91a6102e3178f31a4",
+    "project_tree_state": "EXP-002 files were uncommitted during the recorded run",
+    "ethpandaops_client": "reth/v2.7.0-3d592ec/x86_64-unknown-linux-gnu",
+    "publicnode_client": "Geth/v1.17.1-stable-16783c16/linux-amd64/go1.25.7",
+    "one_rpc_client": "Tenderly/1.0",
+    "tenderly_client": "Tenderly/1.0",
+    "curl": "8.7.1",
+    "jq": "1.6-159-apple-gcff5336-dirty",
+    "operating_system": "macOS 15.1 build 24B2082"
+  },
+  "machine": {
+    "model": "MacBook Pro Mac16,8",
+    "cpu": "Apple M4 Pro",
+    "logical_cores": 14,
+    "memory_gib": 24,
+    "gpu_used": false
+  },
+  "inputs": {
+    "chain_id": 11155111,
+    "block_number": 11849215,
+    "block_hash": "0xae3702c08fffb7b4599d39c511311825b4123a78ef4aa8b1d397f373195cd5f7",
+    "state_root": "0x67edd541eefa8852c61e417316acdd74442b3a37af755096f804e2b15124e098",
+    "finality_observation": "The block was selected from the ethPandaOps finalised tag and was below the later ethPandaOps, PublicNode and Tenderly finalised heads recorded during the run",
+    "contract_address": "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+    "mapping_slot": 3,
+    "storage_key": "0x88080a0f7453a7e6f91b5d6e4f0c47e15d7639174219416b4e29a716c14f0857",
+    "historical_block_hash": "0x9d11a05a418308f20ee690d5700d04bb23893b168a089389b89975cef3eb14e2",
+    "missing_block_hash": "0x1111111111111111111111111111111111111111111111111111111111111111",
+    "providers": {
+      "ethpandaops": "https://rpc.sepolia.ethpandaops.io",
+      "publicnode": "https://ethereum-sepolia-rpc.publicnode.com",
+      "one_rpc": "https://1rpc.io/sepolia",
+      "tenderly": "https://sepolia.gateway.tenderly.co"
+    }
+  },
+  "parameters": {
+    "method": "eth_getProof",
+    "block_number_selector": "0xb4cdff",
+    "block_hash_selector_canonical": {
+      "blockHash": "0xae3702c08fffb7b4599d39c511311825b4123a78ef4aa8b1d397f373195cd5f7",
+      "requireCanonical": true
+    },
+    "block_hash_selector_independent_canonicality": {
+      "blockHash": "0xae3702c08fffb7b4599d39c511311825b4123a78ef4aa8b1d397f373195cd5f7",
+      "requireCanonical": false
+    },
+    "request_timeout_seconds": 30,
+    "transport_retries": 2
+  },
+  "metrics": [
+    {
+      "name": "selector_result_classification",
+      "unit": "categorical",
+      "raw_result_file": "matrix.tsv"
+    },
+    {
+      "name": "normalised_proof_digest",
+      "unit": "sha256",
+      "raw_result_file": "proof-digests.tsv"
+    },
+    {
+      "name": "transport_status",
+      "unit": "curl exit and HTTP status",
+      "raw_result_path": "raw/*/*.transport.json"
+    }
+  ],
+  "started_at": "2026-10-05T19:47:30+05:30",
+  "completed_at": "2026-10-05T19:48:41+05:30"
+}

@@ -3,10 +3,10 @@
 ## Current status
 
 - Active phase: Phase 1
-- Active day: Day 3
+- Active day: Day 4
 - Current gate: not evaluated
-- Completed evidence: Day 1 research scaffolding and tests, plus the Day 2 Sepolia WETH workload experiment and accepted workload decision
-- Next decision: exact block-hash pinning support for `eth_getProof`
+- Completed evidence: Day 1 scaffolding and tests, Day 2 WETH workload selection and Day 3 block-hash provider matrix
+- Next decision: completeness and consistency rules for the first real proof corpus
 
 The day number records project progress. It does not advance merely because a calendar day has
 passed. This status is updated only when evidence is saved, a decision is accepted or a phase gate
@@ -27,7 +27,7 @@ is evaluated.
 |---:|---|---|
 | 1 | Research register, experiment format, ADR template, roadmap and protocol audit. | Complete |
 | 2 | Sepolia WETH contract, storage layout and address corpus selection. | Complete |
-| 3 | Block-hash-pinned `eth_getProof` collection probe. | Not started |
+| 3 | Block-hash-pinned `eth_getProof` collection probe. | Complete |
 | 4 | First real proof corpus with completeness and consistency checks. | Not started |
 | 5 | Rust account and storage proof verifier decision backed by a real local verification. | Not started |
 | 6 | Proof-size measurements and candidate record layout. | Not started |

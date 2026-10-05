@@ -40,6 +40,8 @@ Ethereum results use separate experiment identifiers.
 
 - [`EXP-001`](EXP-001-sepolia-weth-workload/): Sepolia WETH9 workload, mapping slot and first zero
   and non-zero address cases.
+- [`EXP-002`](EXP-002-block-hash-pinning/): EIP-1898 provider compatibility, historical retention
+  and fail-closed block-hash proof collection.
 
 ## Security and privacy
 

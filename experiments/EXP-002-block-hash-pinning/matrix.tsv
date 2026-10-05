@@ -1,0 +1,21 @@
+provider	case	classification	error_code	error_message
+ethpandaops	proof_by_number	proof	-	-
+ethpandaops	proof_by_hash	proof	-	-
+ethpandaops	proof_by_hash_noncanonical_allowed	proof	-	-
+ethpandaops	proof_missing_hash	null	-	-
+ethpandaops	proof_historical_hash	proof	-	-
+publicnode	proof_by_number	proof	-	-
+publicnode	proof_by_hash	proof	-	-
+publicnode	proof_by_hash_noncanonical_allowed	proof	-	-
+publicnode	proof_missing_hash	rpc_error	-32000	header for hash not found
+publicnode	proof_historical_hash	rpc_error	-32000	historical state 7443069b0b51afdd2c7e2d8e54723a3b4fb66e8e200cdc3e96ff314589b0d5e2 is not available
+one_rpc	proof_by_number	proof	-	-
+one_rpc	proof_by_hash	rpc_error	-32602	distance to target block exceeds maximum proof window
+one_rpc	proof_by_hash_noncanonical_allowed	proof	-	-
+one_rpc	proof_missing_hash	rpc_error	-32000	header for hash not found
+one_rpc	proof_historical_hash	rpc_error	-32000	historical state 7443069b0b51afdd2c7e2d8e54723a3b4fb66e8e200cdc3e96ff314589b0d5e2 is not available
+tenderly	proof_by_number	rpc_error	-32603	distance to target block exceeds maximum proof window
+tenderly	proof_by_hash	proof	-	-
+tenderly	proof_by_hash_noncanonical_allowed	proof	-	-
+tenderly	proof_missing_hash	rpc_error	-32001	block not found: hash 0x1111111111111111111111111111111111111111111111111111111111111111
+tenderly	proof_historical_hash	rpc_error	-32602	distance to target block exceeds maximum proof window

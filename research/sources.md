@@ -22,6 +22,7 @@ limitations and linked research questions.
 - Type: Ethereum Improvement Proposal
 - URL: <https://eips.ethereum.org/EIPS/eip-1186>
 - Previously inspected: 13 September 2026
+- Refreshed: 5 October 2026
 - Relevant claim: the RPC response carries an account proof and storage proofs for requested keys.
 - Limitations: method support and block-selector behaviour must be tested against the selected provider.
 - Linked questions: `RQ-002`, `RQ-003`
@@ -31,6 +32,7 @@ limitations and linked research questions.
 - Type: Ethereum Improvement Proposal
 - URL: <https://eips.ethereum.org/EIPS/eip-1898>
 - Previously inspected: 13 September 2026
+- Refreshed: 5 October 2026
 - Relevant claim: state queries can identify a block by hash rather than relying on a moving tag.
 - Limitations: it does not prove that every `eth_getProof` provider implements the selector correctly.
 - Linked questions: `RQ-002`

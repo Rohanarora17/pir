@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "eth_getProof",
+  "params": [
+    "0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14",
+    [
+      "0x88080a0f7453a7e6f91b5d6e4f0c47e15d7639174219416b4e29a716c14f0857"
+    ],
+    {
+      "blockHash": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "requireCanonical": true
+    }
+  ]
+}
