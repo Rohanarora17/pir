@@ -1,3 +1,6 @@
 # Preserve byte-exact retained tool output, including empty licence fields and final log lines.
 experiments/EXP-006-pir-baseline/raw/license-tree.txt -whitespace
 experiments/EXP-007-consensus-root/raw/*.log -whitespace
+
+# PDFs are distributable binary artifacts, even when their streams use ASCII encoding.
+*.pdf binary
