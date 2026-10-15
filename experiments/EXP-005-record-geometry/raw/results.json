@@ -1,0 +1,447 @@
+{
+  "binary_savings_over_compact_json_bytes": 83300,
+  "claim_type": "local result",
+  "distributions": {
+    "binary_frame_bytes": {
+      "max": 2731,
+      "mean": 2517.4375,
+      "median_nearest_rank": 2516,
+      "min": 2254,
+      "p95_nearest_rank": 2635,
+      "total": 80558
+    },
+    "compact_json_record_bytes": {
+      "max": 5545,
+      "mean": 5120.5625,
+      "median_nearest_rank": 5118,
+      "min": 4599,
+      "p95_nearest_rank": 5353,
+      "total": 163858
+    },
+    "proof_node_count": {
+      "max": 7,
+      "mean": 6.0,
+      "median_nearest_rank": 6,
+      "min": 4,
+      "p95_nearest_rank": 7,
+      "total": 192
+    },
+    "storage_proof_bytes": {
+      "max": 2529,
+      "mean": 2319.4375,
+      "median_nearest_rank": 2318,
+      "min": 2064,
+      "p95_nearest_rank": 2433,
+      "total": 74222
+    }
+  },
+  "experiment_id": "EXP-005",
+  "input": {
+    "contract": "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
+    "mapping_slot": "0x0000000000000000000000000000000000000000000000000000000000000003",
+    "records": 32,
+    "snapshot": {
+      "block_hash": "0xb5a539c8976e51dd412a0e6d1e7fec573b260cfddcfa8ae13cf006df5f787a5e",
+      "block_number": 11919648,
+      "chain_id": 11155111,
+      "generation": 1,
+      "state_root": "0xcd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d"
+    }
+  },
+  "padding_candidates": [
+    {
+      "amplification_over_binary": null,
+      "complete_corpus_fits": false,
+      "database_bytes": null,
+      "json_supported_rows": 0,
+      "padding_bytes": null,
+      "padding_fraction_of_database": null,
+      "record_size_bytes": 2048,
+      "rejected_row_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "supported_rows": 0,
+      "verified_roundtrips": 0
+    },
+    {
+      "amplification_over_binary": null,
+      "complete_corpus_fits": false,
+      "database_bytes": null,
+      "json_supported_rows": 0,
+      "padding_bytes": null,
+      "padding_fraction_of_database": null,
+      "record_size_bytes": 2560,
+      "rejected_row_indices": [
+        3,
+        5,
+        10,
+        16,
+        18,
+        19,
+        20,
+        26,
+        27,
+        29
+      ],
+      "supported_rows": 22,
+      "verified_roundtrips": 22
+    },
+    {
+      "amplification_over_binary": 1.2202884877976117,
+      "complete_corpus_fits": true,
+      "database_bytes": 98304,
+      "json_supported_rows": 0,
+      "padding_bytes": 17746,
+      "padding_fraction_of_database": 0.18052164713541666,
+      "record_size_bytes": 3072,
+      "rejected_row_indices": [],
+      "supported_rows": 32,
+      "verified_roundtrips": 32
+    },
+    {
+      "amplification_over_binary": 1.6270513170634822,
+      "complete_corpus_fits": true,
+      "database_bytes": 131072,
+      "json_supported_rows": 0,
+      "padding_bytes": 50514,
+      "padding_fraction_of_database": 0.3853912353515625,
+      "record_size_bytes": 4096,
+      "rejected_row_indices": [],
+      "supported_rows": 32,
+      "verified_roundtrips": 32
+    },
+    {
+      "amplification_over_binary": 3.2541026341269643,
+      "complete_corpus_fits": true,
+      "database_bytes": 262144,
+      "json_supported_rows": 32,
+      "padding_bytes": 181586,
+      "padding_fraction_of_database": 0.6926956176757812,
+      "record_size_bytes": 8192,
+      "rejected_row_indices": [],
+      "supported_rows": 32,
+      "verified_roundtrips": 32
+    }
+  ],
+  "public_manifest": {
+    "compact_json_bytes_at_4096_row_setting": 7799,
+    "generation": "experiment-only generation 1",
+    "pir_fields": "structural placeholders; no backend selected"
+  },
+  "records": [
+    {
+      "binary_frame_bytes": 2533,
+      "json_record_bytes": 5154,
+      "outcome": "absence",
+      "record_index": 0,
+      "storage_nodes": 5,
+      "storage_proof_bytes": 2339
+    },
+    {
+      "binary_frame_bytes": 2452,
+      "json_record_bytes": 4989,
+      "outcome": "inclusion",
+      "record_index": 1,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2254
+    },
+    {
+      "binary_frame_bytes": 2254,
+      "json_record_bytes": 4599,
+      "outcome": "absence",
+      "record_index": 2,
+      "storage_nodes": 4,
+      "storage_proof_bytes": 2064
+    },
+    {
+      "binary_frame_bytes": 2602,
+      "json_record_bytes": 5286,
+      "outcome": "inclusion",
+      "record_index": 3,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2400
+    },
+    {
+      "binary_frame_bytes": 2448,
+      "json_record_bytes": 4981,
+      "outcome": "inclusion",
+      "record_index": 4,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2250
+    },
+    {
+      "binary_frame_bytes": 2569,
+      "json_record_bytes": 5220,
+      "outcome": "inclusion",
+      "record_index": 5,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2367
+    },
+    {
+      "binary_frame_bytes": 2547,
+      "json_record_bytes": 5179,
+      "outcome": "inclusion",
+      "record_index": 6,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2349
+    },
+    {
+      "binary_frame_bytes": 2514,
+      "json_record_bytes": 5113,
+      "outcome": "inclusion",
+      "record_index": 7,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2316
+    },
+    {
+      "binary_frame_bytes": 2405,
+      "json_record_bytes": 4898,
+      "outcome": "absence",
+      "record_index": 8,
+      "storage_nodes": 5,
+      "storage_proof_bytes": 2211
+    },
+    {
+      "binary_frame_bytes": 2478,
+      "json_record_bytes": 5041,
+      "outcome": "absence",
+      "record_index": 9,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2280
+    },
+    {
+      "binary_frame_bytes": 2573,
+      "json_record_bytes": 5232,
+      "outcome": "inclusion",
+      "record_index": 10,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2375
+    },
+    {
+      "binary_frame_bytes": 2481,
+      "json_record_bytes": 5048,
+      "outcome": "inclusion",
+      "record_index": 11,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2283
+    },
+    {
+      "binary_frame_bytes": 2515,
+      "json_record_bytes": 5116,
+      "outcome": "inclusion",
+      "record_index": 12,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2317
+    },
+    {
+      "binary_frame_bytes": 2483,
+      "json_record_bytes": 5052,
+      "outcome": "inclusion",
+      "record_index": 13,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2285
+    },
+    {
+      "binary_frame_bytes": 2286,
+      "json_record_bytes": 4664,
+      "outcome": "absence",
+      "record_index": 14,
+      "storage_nodes": 4,
+      "storage_proof_bytes": 2096
+    },
+    {
+      "binary_frame_bytes": 2477,
+      "json_record_bytes": 5040,
+      "outcome": "inclusion",
+      "record_index": 15,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2279
+    },
+    {
+      "binary_frame_bytes": 2569,
+      "json_record_bytes": 5221,
+      "outcome": "inclusion",
+      "record_index": 16,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2367
+    },
+    {
+      "binary_frame_bytes": 2546,
+      "json_record_bytes": 5178,
+      "outcome": "absence",
+      "record_index": 17,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2348
+    },
+    {
+      "binary_frame_bytes": 2578,
+      "json_record_bytes": 5242,
+      "outcome": "inclusion",
+      "record_index": 18,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2380
+    },
+    {
+      "binary_frame_bytes": 2578,
+      "json_record_bytes": 5242,
+      "outcome": "absence",
+      "record_index": 19,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2380
+    },
+    {
+      "binary_frame_bytes": 2632,
+      "json_record_bytes": 5347,
+      "outcome": "inclusion",
+      "record_index": 20,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2430
+    },
+    {
+      "binary_frame_bytes": 2483,
+      "json_record_bytes": 5052,
+      "outcome": "inclusion",
+      "record_index": 21,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2285
+    },
+    {
+      "binary_frame_bytes": 2547,
+      "json_record_bytes": 5180,
+      "outcome": "inclusion",
+      "record_index": 22,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2349
+    },
+    {
+      "binary_frame_bytes": 2501,
+      "json_record_bytes": 5091,
+      "outcome": "absence",
+      "record_index": 23,
+      "storage_nodes": 5,
+      "storage_proof_bytes": 2307
+    },
+    {
+      "binary_frame_bytes": 2516,
+      "json_record_bytes": 5118,
+      "outcome": "inclusion",
+      "record_index": 24,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2318
+    },
+    {
+      "binary_frame_bytes": 2538,
+      "json_record_bytes": 5159,
+      "outcome": "inclusion",
+      "record_index": 25,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2336
+    },
+    {
+      "binary_frame_bytes": 2731,
+      "json_record_bytes": 5545,
+      "outcome": "inclusion",
+      "record_index": 26,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2529
+    },
+    {
+      "binary_frame_bytes": 2635,
+      "json_record_bytes": 5353,
+      "outcome": "inclusion",
+      "record_index": 27,
+      "storage_nodes": 7,
+      "storage_proof_bytes": 2433
+    },
+    {
+      "binary_frame_bytes": 2484,
+      "json_record_bytes": 5054,
+      "outcome": "inclusion",
+      "record_index": 28,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2286
+    },
+    {
+      "binary_frame_bytes": 2578,
+      "json_record_bytes": 5242,
+      "outcome": "inclusion",
+      "record_index": 29,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2380
+    },
+    {
+      "binary_frame_bytes": 2548,
+      "json_record_bytes": 5182,
+      "outcome": "inclusion",
+      "record_index": 30,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2350
+    },
+    {
+      "binary_frame_bytes": 2477,
+      "json_record_bytes": 5040,
+      "outcome": "inclusion",
+      "record_index": 31,
+      "storage_nodes": 6,
+      "storage_proof_bytes": 2279
+    }
+  ],
+  "shared_account_proof": {
+    "avoided_raw_bytes_vs_repeating_in_all_rows": 111600,
+    "decoded_bytes_once": 3600,
+    "hex_json_array_bytes_once": 7246,
+    "nodes": 9
+  },
+  "storage_node_deduplication": {
+    "comparison_only": "excludes PIR padding, index, path discovery, extra queries and protocol implementation",
+    "duplicate_fraction_of_raw_bytes": 0.35838430653983994,
+    "references": 192,
+    "repeated_raw_bytes": 26600,
+    "simple_hash32_length4_store_bytes": 52734,
+    "unique_nodes": 142,
+    "unique_raw_bytes": 47622
+  },
+  "units": "bytes unless named otherwise",
+  "verification": {
+    "absences": 8,
+    "inclusions": 24,
+    "network_requests": 0,
+    "root_authentication": "not_performed"
+  },
+  "whole_dataset_baseline": {
+    "scope": "local serialized byte count only; not measured network traffic or latency",
+    "unpadded_binary_frames_bytes": 80558,
+    "unpadded_binary_plus_public_manifest_bytes": 88357
+  }
+}

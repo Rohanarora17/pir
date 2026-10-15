@@ -1,0 +1,82 @@
+{
+  "claim_type": "local result",
+  "completed_at": "2026-10-15T12:09:53.341014+00:00",
+  "experiment_id": "EXP-005",
+  "inputs": {
+    "address_corpus_identifier": "EXP-003-declared-addresses-v1",
+    "block_hash": "0xb5a539c8976e51dd412a0e6d1e7fec573b260cfddcfa8ae13cf006df5f787a5e",
+    "block_number": 11919648,
+    "chain_id": 11155111,
+    "contract_address": "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
+    "corpus_checksums_sha256": "8f9943f779f7047e7dc4e106aac3a80f2becd883566b0d5e281218b09eb53d72",
+    "corpus_file": "../EXP-003-real-proof-corpus/retained/corpus.json",
+    "corpus_sha256": "323140e76842da9ad0bd10437e94d2970cef7c8034be829852c61329dda63875",
+    "mapping_slot": 3,
+    "root_authentication": "not_performed",
+    "state_root": "0xcd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d"
+  },
+  "machine": {
+    "architecture": "arm64",
+    "cpu_model": "not queried",
+    "gpu_used": false,
+    "host_ram": "not measured",
+    "logical_cores": 14,
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O"
+  },
+  "metrics": [
+    {
+      "name": "encoded_sizes_node_duplication_padding_and_verified_roundtrips",
+      "raw_result_file": "raw/results.json",
+      "unit": "bytes and cases"
+    }
+  ],
+  "parameters": {
+    "build_profile": "release",
+    "format": "experimental PVR0 binary frame; big endian lengths and integers",
+    "frame_header_bytes": 8,
+    "generation": 1,
+    "generation_and_pir_fields": "structural experiment placeholders",
+    "max_frame_bytes": 1048576,
+    "max_node_bytes": 4096,
+    "max_storage_proof_nodes": 128,
+    "node_length_prefix_bytes": 4,
+    "padding": "zero; exact caller-supplied size; overflow fails",
+    "percentiles": "nearest rank",
+    "pir_backend": "not selected or measured",
+    "proof_representation": "candidate only; shared public account proof plus per-row storage proof",
+    "record_fixed_payload_bytes": 166,
+    "record_sizes_bytes": [
+      2048,
+      2560,
+      3072,
+      4096,
+      8192
+    ],
+    "records": 32
+  },
+  "research_questions": [
+    "RQ-004"
+  ],
+  "software_revisions": {
+    "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+    "dependencies": {
+      "alloy-primitives": "1.7.3",
+      "alloy-rlp": "0.3.16",
+      "eth_trie": "0.6.1",
+      "serde_json": "1.0.151"
+    },
+    "project_base_revision": "67199e294403ce6e18ea8934a5c60ee82a0d2398",
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "tree_state": "dirty; source, locks and fixtures checksummed"
+  },
+  "started_at": "2026-10-15T11:31:33.421116+00:00",
+  "validation": {
+    "clippy_all_targets_deny_warnings": "passed",
+    "corpus_audit": "passed",
+    "deterministic_replay": "byte-identical",
+    "experiment_tests_passed": 6,
+    "format_check": "passed",
+    "independent_code_review": "no blocking findings",
+    "main_workspace_tests_passed": 27
+  }
+}
