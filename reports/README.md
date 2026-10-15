@@ -6,7 +6,12 @@ Helios feasibility boundary, and the planned scale/workload study. It does not c
 consensus authentication or completed scale evaluation.
 
 The PDF matches the current local deliverable. Its wording was revised at Rohan's request to
-use a plainer student progress-report voice while retaining the measured results and limitations. Temporary renders, draft PDFs and audit files
+follow Report 1 as a concise progress update. The report focuses on completed work, main results,
+decisions and next steps. Tutorial explanations and low-level Helios test labels are omitted,
+while evidence limits are retained. The separate
+[discussion walkthrough](progress-report-2-walkthrough.md) explains the concepts, follows one actual
+balance read and links likely questions to evidence. It is preparation material, not a claim that
+a learning session has already been completed. Temporary renders, draft PDFs and audit files
 are deliberately excluded. The earlier Bitcoin assignment is outside this Git repository.
 
 ## Rebuild
