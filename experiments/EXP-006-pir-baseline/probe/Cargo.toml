@@ -1,0 +1,23 @@
+[package]
+name = "pvrpc-pir-baseline"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87"
+publish = false
+
+[workspace]
+resolver = "3"
+
+[dependencies]
+pvrpc-record-geometry = { path = "../../EXP-005-record-geometry/probe" }
+pvrpc-protocol = { path = "../../../crates/protocol" }
+pvrpc-verifier = { path = "../../../crates/verifier" }
+ikpir-common = { path = "../upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-common" }
+ikpir-server = { path = "../upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-server" }
+ikpir-client = { path = "../upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-client" }
+segmented-cuckoo = { path = "../upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/segmented-cuckoo" }
+alloy-primitives = { version = "1", default-features = false, features = ["std"] }
+serde_json = "1"
+
+[profile.test]
+opt-level = 2

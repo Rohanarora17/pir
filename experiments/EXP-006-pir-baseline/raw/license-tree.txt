@@ -1,0 +1,117 @@
+pvrpc-pir-baseline v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/probe) | 
+alloy-primitives v1.7.3 | MIT OR Apache-2.0
+alloy-rlp v0.3.16 | MIT OR Apache-2.0
+alloy-rlp-derive v0.3.16 (proc-macro) | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0
+unicode-ident v1.0.26 | (MIT OR Apache-2.0) AND Unicode-3.0
+quote v1.0.47 | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0 (*)
+syn v2.0.119 | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0 (*)
+quote v1.0.47 | MIT OR Apache-2.0 (*)
+unicode-ident v1.0.26 | (MIT OR Apache-2.0) AND Unicode-3.0
+bytes v1.12.1 | MIT
+bytes v1.12.1 | MIT
+cfg-if v1.0.5 | MIT OR Apache-2.0
+const-hex v1.19.3 | MIT OR Apache-2.0
+cfg-if v1.0.5 | MIT OR Apache-2.0
+derive_more v2.1.1 | MIT
+derive_more-impl v2.1.1 (proc-macro) | MIT
+convert_case v0.10.0 | MIT
+unicode-segmentation v1.13.3 | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0 (*)
+quote v1.0.47 | MIT OR Apache-2.0 (*)
+syn v2.0.119 | MIT OR Apache-2.0 (*)
+unicode-xid v0.2.6 | MIT OR Apache-2.0
+foldhash v0.2.0 | Zlib
+hashbrown v0.17.1 | MIT OR Apache-2.0
+foldhash v0.2.0 | Zlib
+itoa v1.0.18 | MIT OR Apache-2.0
+paste v1.0.15 (proc-macro) | MIT OR Apache-2.0
+ruint v1.17.2 | MIT
+alloy-rlp v0.3.16 | MIT OR Apache-2.0 (*)
+ruint-macro v1.2.1 (proc-macro) | MIT
+sha3 v0.11.0 | MIT OR Apache-2.0
+digest v0.11.3 | MIT OR Apache-2.0
+block-buffer v0.12.1 | MIT OR Apache-2.0
+hybrid-array v0.4.15 | MIT OR Apache-2.0
+typenum v1.20.1 | MIT OR Apache-2.0
+crypto-common v0.2.2 | MIT OR Apache-2.0
+hybrid-array v0.4.15 | MIT OR Apache-2.0 (*)
+keccak v0.2.2 | Apache-2.0 OR MIT
+cfg-if v1.0.5 | MIT OR Apache-2.0
+cpufeatures v0.3.1 | MIT OR Apache-2.0
+libc v0.2.190 | MIT OR Apache-2.0
+ikpir-client v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-client) | Apache-2.0
+ikpir-common v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-common) | Apache-2.0
+rand v0.9.5 | MIT OR Apache-2.0
+rand_chacha v0.9.0 | MIT OR Apache-2.0
+ppv-lite86 v0.2.21 | MIT OR Apache-2.0
+zerocopy v0.8.63 | BSD-2-Clause OR Apache-2.0 OR MIT
+rand_core v0.9.5 | MIT OR Apache-2.0
+getrandom v0.3.4 | MIT OR Apache-2.0
+cfg-if v1.0.5 | MIT OR Apache-2.0
+libc v0.2.190 | MIT OR Apache-2.0
+rand_core v0.9.5 | MIT OR Apache-2.0 (*)
+rand_chacha v0.9.0 | MIT OR Apache-2.0 (*)
+segmented-cuckoo v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/segmented-cuckoo) | Apache-2.0
+rand v0.9.5 | MIT OR Apache-2.0 (*)
+xxhash-rust v0.8.19 | BSL-1.0
+segmented-cuckoo v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/segmented-cuckoo) | Apache-2.0 (*)
+ikpir-common v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-common) | Apache-2.0 (*)
+ikpir-server v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-server) | Apache-2.0
+ikpir-common v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/ikpir-common) | Apache-2.0 (*)
+rand v0.9.5 | MIT OR Apache-2.0 (*)
+rand_chacha v0.9.0 | MIT OR Apache-2.0 (*)
+segmented-cuckoo v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/segmented-cuckoo) | Apache-2.0 (*)
+pvrpc-protocol v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/protocol) | 
+serde v1.0.229 | MIT OR Apache-2.0
+serde_core v1.0.229 | MIT OR Apache-2.0
+serde_derive v1.0.229 (proc-macro) | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0 (*)
+quote v1.0.47 | MIT OR Apache-2.0 (*)
+syn v3.0.6 | MIT OR Apache-2.0
+proc-macro2 v1.0.107 | MIT OR Apache-2.0 (*)
+quote v1.0.47 | MIT OR Apache-2.0 (*)
+unicode-ident v1.0.26 | (MIT OR Apache-2.0) AND Unicode-3.0
+pvrpc-record-geometry v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-005-record-geometry/probe) | 
+alloy-primitives v1.7.3 | MIT OR Apache-2.0 (*)
+pvrpc-protocol v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/protocol) |  (*)
+pvrpc-verifier v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/verifier) | 
+alloy-primitives v1.7.3 | MIT OR Apache-2.0 (*)
+alloy-rlp v0.3.16 | MIT OR Apache-2.0 (*)
+eth_trie v0.6.1 | Apache-2.0
+alloy-primitives v1.7.3 | MIT OR Apache-2.0 (*)
+alloy-rlp v0.3.16 | MIT OR Apache-2.0 (*)
+hashbrown v0.15.5 | MIT OR Apache-2.0
+allocator-api2 v0.2.21 | MIT OR Apache-2.0
+equivalent v1.0.3 | Apache-2.0 OR MIT
+foldhash v0.1.5 | Zlib
+keccak-hash v0.11.0 | MIT OR Apache-2.0
+primitive-types v0.13.1 | MIT OR Apache-2.0
+fixed-hash v0.8.0 | MIT OR Apache-2.0
+static_assertions v1.1.0 | MIT OR Apache-2.0
+uint v0.10.2 | MIT OR Apache-2.0
+byteorder v1.5.0 | Unlicense OR MIT
+crunchy v0.2.4 | MIT
+hex v0.4.3 | MIT OR Apache-2.0
+static_assertions v1.1.0 | MIT OR Apache-2.0
+tiny-keccak v2.0.2 | CC0-1.0
+crunchy v0.2.4 | MIT
+log v0.4.34 | MIT OR Apache-2.0
+parking_lot v0.12.5 | MIT OR Apache-2.0
+lock_api v0.4.14 | MIT OR Apache-2.0
+scopeguard v1.2.0 | MIT OR Apache-2.0
+parking_lot_core v0.9.12 | MIT OR Apache-2.0
+cfg-if v1.0.5 | MIT OR Apache-2.0
+libc v0.2.190 | MIT OR Apache-2.0
+smallvec v1.16.3 | MIT OR Apache-2.0
+pvrpc-protocol v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/protocol) |  (*)
+serde_json v1.0.151 | MIT OR Apache-2.0
+itoa v1.0.18 | MIT OR Apache-2.0
+memchr v2.8.3 | Unlicense OR MIT
+serde_core v1.0.229 | MIT OR Apache-2.0
+zmij v1.0.23 | MIT
+pvrpc-verifier v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/verifier) |  (*)
+segmented-cuckoo v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/upstream/IKPIR-fcfb2b540c1cfa92c2de5ec818db3aa9fc817395/crates/segmented-cuckoo) | Apache-2.0 (*)
+serde_json v1.0.151 | MIT OR Apache-2.0 (*)

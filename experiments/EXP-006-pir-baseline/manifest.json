@@ -1,0 +1,112 @@
+{
+  "claim_type": "local result",
+  "completed_at": "2026-10-15T16:59:08.669932+00:00",
+  "experiment_id": "EXP-006",
+  "inputs": {
+    "address_corpus_identifier": "EXP-003-declared-addresses-v1",
+    "block_hash": "0xb5a539c8976e51dd412a0e6d1e7fec573b260cfddcfa8ae13cf006df5f787a5e",
+    "block_number": 11919648,
+    "chain_id": 11155111,
+    "contract_address": "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
+    "corpus_file": "../EXP-003-real-proof-corpus/retained/corpus.json",
+    "corpus_sha256": "323140e76842da9ad0bd10437e94d2970cef7c8034be829852c61329dda63875",
+    "mapping_slot": 3,
+    "root_authentication": "not_performed",
+    "state_root": "0xcd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d"
+  },
+  "machine": {
+    "architecture": "arm64",
+    "cpu_model": "not queried",
+    "execution": "single-threaded reference setup; sequential queries; one process per case",
+    "gpu_used": false,
+    "host_ram": "not measured",
+    "logical_cores": 14,
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O"
+  },
+  "metrics": [
+    {
+      "name": "per_case_setup_query_response_decode_verification_bytes_and_times",
+      "raw_result_file": "raw/run/*.json",
+      "unit": "bytes and microseconds"
+    },
+    {
+      "name": "peak_process_rss_and_child_exit_status",
+      "raw_result_file": "raw/run/processes.json",
+      "unit": "bytes and seconds"
+    }
+  ],
+  "parameters": {
+    "build_profile": "release",
+    "cases": 8,
+    "client_state_size": "measured public arrays per case plus whole-process peak RSS; private allocation overhead excluded",
+    "cold_queries": true,
+    "database_dimensions": {
+      "index_rows": 32,
+      "keyword_bucket_size": 4,
+      "keyword_buckets": 16,
+      "keyword_load": 0.5,
+      "keyword_logical_slots": 64,
+      "keyword_segments": 2
+    },
+    "preprocessing_generation": 1,
+    "query_count_per_case": 32,
+    "query_response_serialization": "tested bounded PQ06/PR06 framing of opaque u32 vectors",
+    "record_sizes_bytes": [
+      3072,
+      4096
+    ],
+    "schemes": [
+      "FrodoPIR",
+      "SimplePIR",
+      "2-ary IKPIR with each engine"
+    ],
+    "security": {
+      "ciphertext_modulus_log2": 32,
+      "fingerprint_bits_keyword": 64,
+      "lwe_dimension": {
+        "frodo": 1566,
+        "simple": 1275
+      },
+      "plaintext_bits": 8,
+      "security_claim": "upstream default parameters; no independent lattice/security audit",
+      "simple_error_sigma": 6.4,
+      "upstream_correctness_kappa": 40
+    },
+    "setup_serialization": "in-process public bundles; canonical minimum byte estimates only",
+    "transport": "none; in-process client/server exchange",
+    "updates": "disabled; immutable generation",
+    "upstream_epoch_keyword": 0
+  },
+  "pre_push_review": {
+    "date": "2026-10-15",
+    "finding": "extra build inputs and matching-byte symlinks were admitted by source preparation",
+    "resolution": "exact inventory and type checks, with four source-integrity regressions; retained upstream source and benchmark outputs unchanged"
+  },
+  "research_questions": [
+    "RQ-005",
+    "RQ-006"
+  ],
+  "software_revisions": {
+    "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+    "project_base_revision": "67199e294403ce6e18ea8934a5c60ee82a0d2398",
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "tree_state": "dirty; source and locks checksummed",
+    "upstream_archive_sha256": "c271a8be463a94d62467f9cae4dd17014aa2bb983bb3f6e0f0ed8877e41efe57",
+    "upstream_repository": "https://github.com/orochi-network/IKPIR",
+    "upstream_revision": "fcfb2b540c1cfa92c2de5ec818db3aa9fc817395"
+  },
+  "started_at": "2026-10-15T12:52:17.153314+00:00",
+  "validation": {
+    "adapter_integration_tests_passed": 5,
+    "clippy_all_targets_deny_warnings": "passed",
+    "consensus_authentication": "not performed",
+    "format_check": "passed",
+    "independent_code_review": "no blocking findings",
+    "main_workspace_tests_passed": 27,
+    "network_service": "not implemented",
+    "source_extraction": "archive digest, exact extracted inventory, regular file types and file bytes verified",
+    "source_integrity_tests_passed": 4,
+    "successful_cases": 8,
+    "verified_pir_reads": 256
+  }
+}

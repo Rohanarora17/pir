@@ -1,0 +1,2 @@
+# Preserve the byte-exact licence inventory, including empty trailing licence fields.
+experiments/EXP-006-pir-baseline/raw/license-tree.txt -whitespace

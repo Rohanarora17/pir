@@ -1,0 +1,339 @@
+{
+  "cases": [
+    {
+      "case": "simple-index-3072",
+      "client_public_arrays_bytes": 15830400,
+      "client_setup_us": 1766,
+      "local_total_us": {
+        "max": 659,
+        "mean": 437.96875,
+        "median_nearest_rank": 413,
+        "min": 398,
+        "p95_nearest_rank": 511
+      },
+      "online_total_bytes": {
+        "max": 12504,
+        "mean": 12504.0,
+        "median_nearest_rank": 12504,
+        "min": 12504,
+        "p95_nearest_rank": 12504
+      },
+      "peak_whole_process_rss_bytes": 34570240,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 3072,
+      "request_bytes": {
+        "max": 172,
+        "mean": 172.0,
+        "median_nearest_rank": 172,
+        "min": 172,
+        "p95_nearest_rank": 172
+      },
+      "response_bytes": {
+        "max": 12332,
+        "mean": 12332.0,
+        "median_nearest_rank": 12332,
+        "min": 12332,
+        "p95_nearest_rank": 12332
+      },
+      "server_setup_us": 16393,
+      "setup_bundle_export_us": 0,
+      "setup_payload_min_bytes": 15667284,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 109390
+    },
+    {
+      "case": "simple-keyword-3072",
+      "client_public_arrays_bytes": 125745600,
+      "client_setup_us": 11014,
+      "local_total_us": {
+        "max": 4076,
+        "mean": 2196.40625,
+        "median_nearest_rank": 2122,
+        "min": 2105,
+        "p95_nearest_rank": 2284
+      },
+      "online_total_bytes": {
+        "max": 98720,
+        "mean": 98720.0,
+        "median_nearest_rank": 98720,
+        "min": 98720,
+        "p95_nearest_rank": 98720
+      },
+      "peak_whole_process_rss_bytes": 387383296,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 3072,
+      "request_bytes": {
+        "max": 112,
+        "mean": 112.0,
+        "median_nearest_rank": 112,
+        "min": 112,
+        "p95_nearest_rank": 112
+      },
+      "response_bytes": {
+        "max": 98608,
+        "mean": 98608.0,
+        "median_nearest_rank": 98608,
+        "min": 98608,
+        "p95_nearest_rank": 98608
+      },
+      "server_setup_us": 31997,
+      "setup_bundle_export_us": 8796,
+      "setup_payload_min_bytes": 125664173,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 109390
+    },
+    {
+      "case": "frodo-index-3072",
+      "client_public_arrays_bytes": 19443456,
+      "client_setup_us": 1521,
+      "local_total_us": {
+        "max": 642,
+        "mean": 397.46875,
+        "median_nearest_rank": 384,
+        "min": 379,
+        "p95_nearest_rank": 504
+      },
+      "online_total_bytes": {
+        "max": 12504,
+        "mean": 12504.0,
+        "median_nearest_rank": 12504,
+        "min": 12504,
+        "p95_nearest_rank": 12504
+      },
+      "peak_whole_process_rss_bytes": 41762816,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 3072,
+      "request_bytes": {
+        "max": 172,
+        "mean": 172.0,
+        "median_nearest_rank": 172,
+        "min": 172,
+        "p95_nearest_rank": 172
+      },
+      "response_bytes": {
+        "max": 12332,
+        "mean": 12332.0,
+        "median_nearest_rank": 12332,
+        "min": 12332,
+        "p95_nearest_rank": 12332
+      },
+      "server_setup_us": 12987,
+      "setup_bundle_export_us": 0,
+      "setup_payload_min_bytes": 19243072,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 109390
+    },
+    {
+      "case": "frodo-keyword-3072",
+      "client_public_arrays_bytes": 154445184,
+      "client_setup_us": 14814,
+      "local_total_us": {
+        "max": 5222,
+        "mean": 2687.46875,
+        "median_nearest_rank": 2580,
+        "min": 2533,
+        "p95_nearest_rank": 2785
+      },
+      "online_total_bytes": {
+        "max": 98720,
+        "mean": 98720.0,
+        "median_nearest_rank": 98720,
+        "min": 98720,
+        "p95_nearest_rank": 98720
+      },
+      "peak_whole_process_rss_bytes": 474218496,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 3072,
+      "request_bytes": {
+        "max": 112,
+        "mean": 112.0,
+        "median_nearest_rank": 112,
+        "min": 112,
+        "p95_nearest_rank": 112
+      },
+      "response_bytes": {
+        "max": 98608,
+        "mean": 98608.0,
+        "median_nearest_rank": 98608,
+        "min": 98608,
+        "p95_nearest_rank": 98608
+      },
+      "server_setup_us": 37011,
+      "setup_bundle_export_us": 9844,
+      "setup_payload_min_bytes": 154345093,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 109390
+    },
+    {
+      "case": "simple-index-4096",
+      "client_public_arrays_bytes": 21052800,
+      "client_setup_us": 1575,
+      "local_total_us": {
+        "max": 472,
+        "mean": 417.875,
+        "median_nearest_rank": 415,
+        "min": 407,
+        "p95_nearest_rank": 430
+      },
+      "online_total_bytes": {
+        "max": 16600,
+        "mean": 16600.0,
+        "median_nearest_rank": 16600,
+        "min": 16600,
+        "p95_nearest_rank": 16600
+      },
+      "peak_whole_process_rss_bytes": 45154304,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 4096,
+      "request_bytes": {
+        "max": 172,
+        "mean": 172.0,
+        "median_nearest_rank": 172,
+        "min": 172,
+        "p95_nearest_rank": 172
+      },
+      "response_bytes": {
+        "max": 16428,
+        "mean": 16428.0,
+        "median_nearest_rank": 16428,
+        "min": 16428,
+        "p95_nearest_rank": 16428
+      },
+      "server_setup_us": 14091,
+      "setup_bundle_export_us": 0,
+      "setup_payload_min_bytes": 20889684,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 142158
+    },
+    {
+      "case": "simple-keyword-4096",
+      "client_public_arrays_bytes": 167524800,
+      "client_setup_us": 14365,
+      "local_total_us": {
+        "max": 5299,
+        "mean": 3053.46875,
+        "median_nearest_rank": 2970,
+        "min": 2943,
+        "p95_nearest_rank": 3131
+      },
+      "online_total_bytes": {
+        "max": 131488,
+        "mean": 131488.0,
+        "median_nearest_rank": 131488,
+        "min": 131488,
+        "p95_nearest_rank": 131488
+      },
+      "peak_whole_process_rss_bytes": 516046848,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 4096,
+      "request_bytes": {
+        "max": 112,
+        "mean": 112.0,
+        "median_nearest_rank": 112,
+        "min": 112,
+        "p95_nearest_rank": 112
+      },
+      "response_bytes": {
+        "max": 131376,
+        "mean": 131376.0,
+        "median_nearest_rank": 131376,
+        "min": 131376,
+        "p95_nearest_rank": 131376
+      },
+      "server_setup_us": 40882,
+      "setup_bundle_export_us": 10224,
+      "setup_payload_min_bytes": 167443373,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 142158
+    },
+    {
+      "case": "frodo-index-4096",
+      "client_public_arrays_bytes": 25857792,
+      "client_setup_us": 1852,
+      "local_total_us": {
+        "max": 644,
+        "mean": 497.53125,
+        "median_nearest_rank": 490,
+        "min": 479,
+        "p95_nearest_rank": 537
+      },
+      "online_total_bytes": {
+        "max": 16600,
+        "mean": 16600.0,
+        "median_nearest_rank": 16600,
+        "min": 16600,
+        "p95_nearest_rank": 16600
+      },
+      "peak_whole_process_rss_bytes": 55017472,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 4096,
+      "request_bytes": {
+        "max": 172,
+        "mean": 172.0,
+        "median_nearest_rank": 172,
+        "min": 172,
+        "p95_nearest_rank": 172
+      },
+      "response_bytes": {
+        "max": 16428,
+        "mean": 16428.0,
+        "median_nearest_rank": 16428,
+        "min": 16428,
+        "p95_nearest_rank": 16428
+      },
+      "server_setup_us": 17416,
+      "setup_bundle_export_us": 0,
+      "setup_payload_min_bytes": 25657408,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 142158
+    },
+    {
+      "case": "frodo-keyword-4096",
+      "client_public_arrays_bytes": 205759872,
+      "client_setup_us": 20990,
+      "local_total_us": {
+        "max": 15697,
+        "mean": 3992.125,
+        "median_nearest_rank": 3600,
+        "min": 3539,
+        "p95_nearest_rank": 3775
+      },
+      "online_total_bytes": {
+        "max": 131488,
+        "mean": 131488.0,
+        "median_nearest_rank": 131488,
+        "min": 131488,
+        "p95_nearest_rank": 131488
+      },
+      "peak_whole_process_rss_bytes": 630915072,
+      "public_manifest_and_index_map_bytes": 11086,
+      "record_size_bytes": 4096,
+      "request_bytes": {
+        "max": 112,
+        "mean": 112.0,
+        "median_nearest_rank": 112,
+        "min": 112,
+        "p95_nearest_rank": 112
+      },
+      "response_bytes": {
+        "max": 131376,
+        "mean": 131376.0,
+        "median_nearest_rank": 131376,
+        "min": 131376,
+        "p95_nearest_rank": 131376
+      },
+      "server_setup_us": 50224,
+      "setup_bundle_export_us": 13044,
+      "setup_payload_min_bytes": 205659781,
+      "verified_reads": 32,
+      "whole_dataset_download_once_bytes": 142158
+    }
+  ],
+  "notes": [
+    "Nearest-rank percentiles over 32 cold sequential reads per case; no transport latency.",
+    "Setup sizes are canonical minimum estimates; query/response sizes are actually encoded frames.",
+    "RSS is the whole process, not client-only; public arrays exclude allocator and private-state overhead.",
+    "Whole-dataset download can be cached once per immutable generation; do not compare against re-downloading it for every read."
+  ],
+  "verified_reads_total": 256
+}
