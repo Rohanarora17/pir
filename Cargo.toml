@@ -1,10 +1,10 @@
 [workspace]
-resolver = "2"
-members = ["crates/manifest-cli", "crates/protocol"]
+resolver = "3"
+members = ["crates/manifest-cli", "crates/protocol", "crates/verifier"]
 
 [workspace.package]
 edition = "2024"
-rust-version = "1.85"
+rust-version = "1.87"
 repository = "https://github.com/Rohanarora17/pir"
 
 [workspace.dependencies]

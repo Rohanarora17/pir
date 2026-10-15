@@ -1,0 +1,16 @@
+[package]
+name = "pvrpc-verifier"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+pvrpc-protocol = { path = "../protocol" }
+eth_trie = "=0.6.1"
+alloy-primitives = { version = "1", default-features = false, features = ["std", "rlp"] }
+alloy-rlp = { version = "0.3", features = ["derive"] }
+
+[dev-dependencies]
+serde_json.workspace = true

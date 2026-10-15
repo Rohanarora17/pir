@@ -12,6 +12,10 @@ impl Hash32 {
     pub const fn new(bytes: [u8; 32]) -> Self {
         Self(bytes)
     }
+
+    pub const fn as_bytes(&self) -> &[u8; 32] {
+        &self.0
+    }
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
@@ -20,6 +24,10 @@ pub struct Address([u8; 20]);
 impl Address {
     pub const fn new(bytes: [u8; 20]) -> Self {
         Self(bytes)
+    }
+
+    pub const fn as_bytes(&self) -> &[u8; 20] {
+        &self.0
     }
 
     fn is_zero(&self) -> bool {
@@ -33,6 +41,10 @@ pub struct HexBytes(Vec<u8>);
 impl HexBytes {
     pub fn new(bytes: Vec<u8>) -> Self {
         Self(bytes)
+    }
+
+    pub fn as_bytes(&self) -> &[u8] {
+        &self.0
     }
 
     fn is_empty(&self) -> bool {
