@@ -1,7 +1,10 @@
-/target/
+target/
 .superpowers/
 .DS_Store
 .env
 .env.*
 !.env.example
 *.profraw
+__pycache__/
+/experiments/EXP-006-pir-baseline/upstream/
+/experiments/EXP-007-consensus-root/upstream/

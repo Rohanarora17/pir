@@ -1,0 +1,89 @@
+{
+  "claim_type": "local result",
+  "completed_at": "2026-10-15T10:14:37.194509+00:00",
+  "experiment_id": "EXP-003",
+  "inputs": {
+    "address_corpus_file": "addresses.json",
+    "address_corpus_identifier": "EXP-003-declared-addresses-v1",
+    "address_corpus_sha256": "647a197326fe984c94e051d47ac6a347f340906bf41958f35001a86f531ef204",
+    "archive_reproduction": {
+      "endpoint": "https://rpc.sepolia.ethpandaops.io",
+      "manifest": "archive-replay/manifest.json",
+      "normalized_corpus_identical": true
+    },
+    "block_hash": "0xb5a539c8976e51dd412a0e6d1e7fec573b260cfddcfa8ae13cf006df5f787a5e",
+    "block_number": 11919648,
+    "chain_id": 11155111,
+    "contract_address": "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
+    "finality_source": "provider-reported finalized head; unauthenticated",
+    "generation_method": "EXP-001 seeds followed by sorted distinct sender/recipient addresses from retained WETH Transfer logs; first 32 total",
+    "initial_collector_source": "source/collector-at-initial-collection.py",
+    "mapping_slot": 3,
+    "retained_collection": "retained/manifest.json",
+    "retention_failure": "failed-retention-replay/failure.json",
+    "rpc_endpoint_environment_variable": "PVRPC_RPC_URL",
+    "rpc_endpoint_origin": "https://ethereum-sepolia-rpc.publicnode.com",
+    "source_checksums": {
+      "source/collector-at-initial-collection.py": "4bcb25df572b5e0c0800e945c98523d39810fa4949f2edd447f4003fe44bf32c",
+      "source/finalized-observation.request.json": "99135eb099c21dda02ad8d2fd681e5a99a8da2433f9f99f5be99c2eb3bccc5f3",
+      "source/finalized-observation.response.json": "fd79a9d602a1df6544e0462dd6503e16861dc7abfcbc2e3b8c4c595cbbca580d",
+      "source/transfer-logs.request.json": "e471c4ca463384fe19b855f2b38520d50f45619990adf6b0a5a7f72a57594a3b",
+      "source/transfer-logs.response.json": "f44e003fea956442ecfc6b01ed3af5a0c42ee2b975cae530e54783d827338380"
+    },
+    "state_root": "0xcd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d",
+    "transfer_log_window": {
+      "distinct_log_addresses": 80,
+      "from_block": 11917601,
+      "logs": 282,
+      "to_block": 11919648
+    }
+  },
+  "machine": {
+    "architecture": "arm64",
+    "cpu": "unavailable",
+    "gpu_used": false,
+    "logical_cores": 14,
+    "memory_bytes": "unavailable"
+  },
+  "metrics": [
+    {
+      "name": "reported_value_class_and_decoded_proof_size",
+      "raw_result_file": "retained/corpus.json",
+      "unit": "records/nodes/bytes"
+    }
+  ],
+  "parameters": {
+    "collection_seconds": 9.616368,
+    "consensus_authentication": "not_performed",
+    "proof_verification": "not_performed",
+    "record_count": 32,
+    "reported_nonzero_count": 24,
+    "reported_zero_count": 8,
+    "require_canonical": false,
+    "selector": "block_hash",
+    "verification": {
+      "archive_replay": "pass",
+      "cargo_clippy": "pass",
+      "cargo_fmt": "pass",
+      "offline_audit": "pass",
+      "python_tests": 18,
+      "rust_tests": 14
+    }
+  },
+  "research_questions": [
+    "RQ-001",
+    "RQ-002",
+    "RQ-003",
+    "RQ-004"
+  ],
+  "software_revisions": {
+    "cast": "cast Version: 1.2.3-Homebrew\nCommit SHA: VERGEN_IDEMPOTENT_OUTPUT\nBuild Timestamp: 2025-06-05T16:51:14.000000000Z (1749142274)\nBuild Profile: release",
+    "collector_sha256": "4bcb25df572b5e0c0800e945c98523d39810fa4949f2edd447f4003fe44bf32c",
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O",
+    "project_base_revision": "67199e294403ce6e18ea8934a5c60ee82a0d2398",
+    "project_tree_state": "dirty",
+    "provider_client_version": "Geth/v1.17.7-stable-3d858f85/linux-amd64/go1.25.14",
+    "python": "3.14.0"
+  },
+  "started_at": "2026-10-15T10:14:27.578238+00:00"
+}

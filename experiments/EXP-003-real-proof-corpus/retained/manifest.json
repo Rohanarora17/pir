@@ -1,0 +1,58 @@
+{
+  "claim_type": "local result",
+  "completed_at": "2026-10-15T10:14:37.194509+00:00",
+  "experiment_id": "EXP-003",
+  "inputs": {
+    "address_corpus_file": "addresses.json",
+    "address_corpus_identifier": "EXP-003-declared-addresses-v1",
+    "block_hash": "0xb5a539c8976e51dd412a0e6d1e7fec573b260cfddcfa8ae13cf006df5f787a5e",
+    "block_number": 11919648,
+    "chain_id": 11155111,
+    "contract_address": "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
+    "finality_source": "provider-reported finalized head; unauthenticated",
+    "mapping_slot": 3,
+    "rpc_endpoint_environment_variable": "PVRPC_RPC_URL",
+    "rpc_endpoint_origin": "https://ethereum-sepolia-rpc.publicnode.com",
+    "state_root": "0xcd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d"
+  },
+  "machine": {
+    "architecture": "arm64",
+    "cpu": "unavailable",
+    "gpu_used": false,
+    "logical_cores": 14,
+    "memory_bytes": "unavailable"
+  },
+  "metrics": [
+    {
+      "name": "reported_value_class_and_proof_size",
+      "raw_result_file": "corpus.json",
+      "unit": "records/nodes/bytes"
+    }
+  ],
+  "parameters": {
+    "collection_seconds": 9.616368,
+    "consensus_authentication": "not_performed",
+    "proof_verification": "not_performed",
+    "record_count": 32,
+    "reported_nonzero_count": 24,
+    "reported_zero_count": 8,
+    "require_canonical": false,
+    "selector": "block_hash"
+  },
+  "research_questions": [
+    "RQ-001",
+    "RQ-002",
+    "RQ-003",
+    "RQ-004"
+  ],
+  "software_revisions": {
+    "cast": "cast Version: 1.2.3-Homebrew\nCommit SHA: VERGEN_IDEMPOTENT_OUTPUT\nBuild Timestamp: 2025-06-05T16:51:14.000000000Z (1749142274)\nBuild Profile: release",
+    "collector_sha256": "4bcb25df572b5e0c0800e945c98523d39810fa4949f2edd447f4003fe44bf32c",
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O",
+    "project_base_revision": "67199e294403ce6e18ea8934a5c60ee82a0d2398",
+    "project_tree_state": "dirty",
+    "provider_client_version": "Geth/v1.17.7-stable-3d858f85/linux-amd64/go1.25.14",
+    "python": "3.14.0"
+  },
+  "started_at": "2026-10-15T10:14:27.578238+00:00"
+}

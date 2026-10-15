@@ -1,0 +1,5 @@
+{
+  "completed": false,
+  "kind": "unavailable_state",
+  "message": "JSON-RPC failure (-32000): historical state cd9f7d6a28dee33eaa3190be42a94656883f3043699dc408cdbbcc379a352e3d is not available"
+}
