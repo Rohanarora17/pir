@@ -5,7 +5,8 @@
 Helios feasibility boundary, and the planned scale/workload study. It does not claim live
 consensus authentication or completed scale evaluation.
 
-The PDF matches the approved local deliverable. Temporary renders, draft PDFs and audit files
+The PDF matches the current local deliverable. Its wording was revised at Rohan's request to
+use a plainer student progress-report voice while retaining the measured results and limitations. Temporary renders, draft PDFs and audit files
 are deliberately excluded. The earlier Bitcoin assignment is outside this Git repository.
 
 ## Rebuild
