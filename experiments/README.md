@@ -55,6 +55,10 @@ Ethereum results use separate experiment identifiers.
 - [`EXP-007`](EXP-007-consensus-root/): pinned Helios consensus-core synthetic replay, exact finalized
   execution context and root/freshness admission tests. No live Sepolia authentication.
 
+- [`EXP-008`](EXP-008-synthetic-pir-scale/): resource-bounded synthetic SimplePIR scale sweep,
+  with fair once-per-snapshot caching, setup/online/client-memory accounting and explicit skipped
+  sizes. First Day 9 slice, not a real-proof representation or live-network comparison.
+
 ## Security and privacy
 
 Never store provider API keys, credentials, signing keys, private wallet data or unredacted personal

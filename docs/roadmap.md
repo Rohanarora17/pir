@@ -19,7 +19,11 @@
 - Completed Day 8: EXP-007 verifies synthetic Helios updates and root/freshness admission with an
   exact candidate interface. Helios is selected in ADR-007; ADR-006's integration mode remains
   proposed, and live Sepolia authentication is pending.
-- Next investigation: bundled proof, trie-node and whole-shard comparison
+- Started Day 9: EXP-008 adds a resource-bounded synthetic scale sweep with 12 completed cases,
+  384 correct sampled reads and four explicit memory-budget skips. It finds workload-dependent
+  estimated byte savings and significant client public-array costs. Real representation, setup
+  transport and network comparisons are still pending.
+- Next investigation: real bundled-proof versus shared-node retrieval costs
 - Evaluation scope: the 32-record corpus establishes functional correctness. Day 9 must add a
   resource-bounded scale sweep; the tiny-corpus download result does not decide PIR suitability.
 
@@ -48,7 +52,7 @@ is evaluated.
 | 6 | Proof-size measurements and candidate record layout. | Complete: EXP-005; 3/4/8 KiB candidate round trips; final geometry awaits backend evidence |
 | 7 | Reproduced PIR server and client query with build and licence evidence. | Complete: EXP-006 local CPU reads; 256 verified cases; ADR-005 proposed; final backend/licence policy open |
 | 8 | Consensus light client adapter feasibility and exact interface. | Complete: EXP-007 synthetic fixture replay, 10 boundary tests and proposed ADR-006; live authentication remains pending |
-| 9 | Bundled proof, trie-node and whole-shard comparison. | Not started |
+| 9 | Bundled proof, trie-node and whole-shard comparison. | In progress: EXP-008 synthetic scale baseline complete; real representation comparison pending |
 | 10 | Evidence review, accepted decisions, interface freeze and Phase 1 gate. | Not started |
 
 ## Status update rule

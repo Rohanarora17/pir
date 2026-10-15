@@ -9,7 +9,7 @@ workspace so the earlier Bitcoin FIBRE assignment in the parent directory remain
 
 - Active phase: Phase 1, foundation, research and design lock
 - Completed checkpoint: Day 8 consensus-root interface feasibility in EXP-007 (synthetic fixtures)
-- Next checkpoint: Day 9 bundled proof, trie-node and whole-shard comparison
+- In progress: Day 9 scale and bundled-proof/trie-node/whole-shard comparison
 - Current evidence: local proof/PIR reads plus signed consensus-fixture replay; live root
   authentication pending
 - Verifier rationale: accepted ADR-003 and the retained EXP-004 comparison
@@ -58,6 +58,12 @@ rules have supporting evidence.
   fixtures, exports a checked finalized execution context, and tests root/network/freshness rejection.
   Ten Rust and four source-integrity tests pass. This is synthetic feasibility, not live Sepolia sync
   or authentication of EXP-003. The consensus-only interface in ADR-006 remains proposed.
+
+- [`EXP-008`](experiments/EXP-008-synthetic-pir-scale/summary.md) runs synthetic direct SimplePIR
+  at six admitted sizes from 32 to 32,768 records and two widths, with 384 correct sampled reads.
+  Larger sizes are explicitly skipped by resource admission. Estimated communication savings
+  appear for some workloads, with significant client-memory costs. Real representation and
+  network comparisons remain pending.
 
 ## Run the foundation
 

@@ -397,12 +397,18 @@ without claiming practical superiority.
 
 ### Status
 
-`open`
+`investigating`
 
 ### Linked experiments
 
 Depends on the record measurements from `RQ-004` and backend measurements from `RQ-005`. The main
 comparison runs on Days 9 and 29.
+
+[EXP-008](../experiments/EXP-008-synthetic-pir-scale/summary.md) provides the first synthetic
+scale slice: 12 completed cases from 32 to 32,768 rows, two widths, 384 sampled reads and four
+resource-budget skips. It finds conditional estimated communication savings, with setup minima
+and substantial client arrays. Real metadata, network costs, generation transitions and the
+bundled-proof/shared-node comparison remain pending. The decision criterion is not yet met.
 
 ### Linked decisions
 

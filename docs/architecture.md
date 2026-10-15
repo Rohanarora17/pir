@@ -121,7 +121,10 @@ experimental padded binary rows through the verifier. EXP-006 now retrieves thos
 index and keyword PIR with SimplePIR/FrodoPIR, with 256 verified local reads and bounded numeric-
 vector framing. Proposed ADR-005 recommends direct indexing for subsequent snapshot integration.
 EXP-007 establishes a synthetic consensus-root interface feasibility result; ADR-006 remains
-proposed. Next is the Day 9 representation/baseline comparison. Setup serialization, network
+proposed. Day 9 is in progress: EXP-008 adds a resource-bounded synthetic SimplePIR scale baseline and
+once-per-snapshot cache accounting. Its estimated communication windows do not establish a client
+storage or live-network benefit. The real proof-representation comparison remains pending.
+Setup serialization, network
 transport, live root authentication, authenticated generation commitments, final backend selection and layout remain open. Experimental codecs and
 probes do not freeze the snapshot-builder API or introduce a production wire format.
 
