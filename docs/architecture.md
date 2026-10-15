@@ -62,11 +62,30 @@ and enforce its generation and key binding. It will then verify the account proo
 against an independently authenticated state root. The client will return a balance only after all
 checks pass.
 
+`pvrpc-verifier` now implements the proof portion with eth_trie 0.6.1. Its project-owned
+`ReadContext` binds the expected snapshot, contract, key and record index independently of the
+response. It recovers the account first, decodes its storage root, then recovers storage with
+typed presence/absence/errors. Local byte limits and structural admission precede backend
+decoding. See the [API contract and real-input walkthrough](../crates/verifier/README.md).
+The protocol has only read-only byte accessors added; it has no trie dependencies.
+
 ### Consensus light client adapter
+
+Helios is the accepted implementation choice in [ADR-007](decisions/ADR-007-helios-light-client.md).
+The integration mode within Helios remains open; ADR-006 proposes the core-only option.
 
 The adapter will provide the finalised execution block hash and state root accepted by the light
 client. It will not fetch storage proofs. Its role is to stop the state provider from choosing a
 fabricated root that also matches a fabricated proof.
+
+EXP-007 prototypes this boundary outside the production workspace using pinned Helios consensus
+core and synthetic Deneb vectors. The store is private, updates are verified before application,
+forced updates are excluded, and only a normal post-bootstrap finality advance enables export.
+The private-construction context admits an exact chain/number/hash/state-root snapshot and checks
+caller-defined freshness. It does not authenticate publisher generation or other manifest metadata.
+See [proposed ADR-006](decisions/ADR-006-consensus-root-boundary.md) for exact inputs/errors, checkpoint
+assumptions and unsupported hash-only header handling. Live Sepolia sync and proof/PIR composition
+remain pending; the existing real corpus root is still provider-reported.
 
 ### Evaluation harness
 
@@ -91,17 +110,26 @@ records.
 
 ## Next implementation slice
 
-The next vertical slice should use a small real Sepolia corpus. It should pin one finalised block,
-derive WETH balance storage keys, call `eth_getProof`, verify the account and storage proofs locally
-and write records matching the protocol crate. This gives us a real verified read before PIR is
-introduced.
+EXP-003 now provides 32 real proof responses collected with the hash selector and checked for
+structural completeness and consistent account fields. Its provider-reported state root is not
+independently authenticated, and its zeros have not been established as membership or absence.
+
+EXP-004 verifies the account/storage paths with two Rust candidates and tests corrupt-proof
+rejection. ADR-003 selects eth_trie's value-recovery verifier, now implemented in `pvrpc-verifier`
+and tested against all 32 retained records. EXP-005 now measures proof/record geometry and checks
+experimental padded binary rows through the verifier. EXP-006 now retrieves those rows using
+index and keyword PIR with SimplePIR/FrodoPIR, with 256 verified local reads and bounded numeric-
+vector framing. Proposed ADR-005 recommends direct indexing for subsequent snapshot integration.
+EXP-007 establishes a synthetic consensus-root interface feasibility result; ADR-006 remains
+proposed. Next is the Day 9 representation/baseline comparison. Setup serialization, network
+transport, live root authentication, authenticated generation commitments, final backend selection and layout remain open. Experimental codecs and
+probes do not freeze the snapshot-builder API or introduce a production wire format.
 
 ## Decisions still open
 
 - The Ethereum execution client or RPC endpoint used by the snapshot builder.
-- The Rust Merkle Patricia proof library, or whether the minimal verifier should be implemented in
-  the project.
-- The consensus light client integration boundary, most likely Helios output or a small adapter.
-- The PIR backend and its licence after a minimal server and client query is reproduced locally.
+- The integration mode within the accepted Helios choice: consensus core, fuller embedded client
+  or locally controlled Helios process.
+- Final PIR backend acceptance, larger-corpus costs and distribution policy after the local probe.
 - The fixed record size after measuring proof sizes on the selected real corpus.
 - The repository licence.

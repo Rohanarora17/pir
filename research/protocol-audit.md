@@ -75,3 +75,12 @@ Status values have these exact meanings:
 No schema change is accepted by this audit. Changes will be proposed after the linked research
 question produces evidence and will be recorded through an ADR when they affect compatibility or
 the trust boundary.
+
+## Day 8 evidence update: 2026-10-15
+
+The table above preserves the Day 1 protocol-only audit. EXP-007 now prototypes finalized execution
+root admission outside the production workspace. Its pinned Helios core verifies synthetic minimal
+Deneb fixtures; its private-construction context checks exact snapshot root/identity and caller lag.
+This does not change protocol formats, authenticate the existing Sepolia corpus or fill generation
+commitment/history/network transport gaps. Proposed ADR-006 specifies the boundary; RQ-007 remains
+investigating pending live target-network behavior and integration acceptance.

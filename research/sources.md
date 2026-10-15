@@ -43,6 +43,9 @@ limitations and linked research questions.
 - URL: <https://github.com/a16z/helios>
 - Previously inspected revision: `43a8c9f3cdda41a6f383c4db41d9a83f102638b1`
 - Previously inspected: 13 September 2026
+- Refreshed: 15 October 2026, revision `2af9b41887e069144ee56cd710f3ddca195473f8`,
+  `core/src/execution/proof.rs` and workspace dependency declarations. The proof wrapper hashes
+  keys, RLP-encodes values and calls Alloy's standalone verifier; empty values use exclusion.
 - Relevant claim: Helios connects consensus-derived execution headers to account and storage proof verification.
 - Limitations: the inspected ordinary RPC path reveals requested accounts and storage slots. Interfaces and maintenance must be refreshed before integration.
 - Linked questions: `RQ-003`, `RQ-007`
@@ -124,3 +127,59 @@ limitations and linked research questions.
 - Relevant claim: Circle's FiatToken uses an implementation contract and a proxy whose storage is modified through `delegatecall`.
 - Limitations: this source explains why a USDC compatibility workload needs an additional implementation and storage-layout check. It does not evaluate a particular Sepolia USDC block.
 - Linked question: `RQ-001`
+## SRC-013: alloy-trie published verification implementation
+
+- Type: published Rust crate source and upstream repository
+- Version: `0.9.8`, VCS revision `ad944859833231da7ae5fc614c66f6eea8c3bffc`
+- URL: <https://github.com/alloy-rs/trie/blob/ad944859833231da7ae5fc614c66f6eea8c3bffc/src/proof/verify.rs>
+- Inspected: 15 October 2026, published source, Cargo metadata, licence and upstream inline-node tests.
+- Claim: standalone inclusion/exclusion verification; MIT OR Apache-2.0; declared Rust 1.85.
+- Local evidence: EXP-004's real corpus and negative-case executable.
+- Limitations: sampled tests are not a formal proof or consensus authentication; full minimum-version
+  graph build and independently reproduced inline-node fixtures remain pending.
+- Linked question: `RQ-003`
+
+## SRC-014: eth_trie published verification implementation
+
+- Type: published Rust crate source and upstream repository
+- Version: `0.6.1`, VCS revision `13e87b0c1bab9cd0f2e48f835df25a1f7d28ddfa`
+- URL: <https://github.com/ethereum/eth-trie.rs/blob/13e87b0c1bab9cd0f2e48f835df25a1f7d28ddfa/src/trie.rs>
+- Inspected: 15 October 2026, proof method, MemoryDB, Cargo metadata and Apache-2.0 licence.
+- Claim: root/key/proof verification returns a value or absence; declared Rust 1.87.
+- Local evidence: EXP-004 runs the same corpus and rejection checks as the Alloy candidate.
+- Limitations: this does not select a production dependency or test Rust 1.85 compatibility.
+- Linked question: `RQ-003`
+
+## SRC-015: Pinned IKPIR index engines and keyword protocol
+
+- Type: upstream Rust source, retained unmodified archive and licence/NOTICE
+- Revision: `fcfb2b540c1cfa92c2de5ec818db3aa9fc817395`
+- URL: <https://github.com/orochi-network/IKPIR/tree/fcfb2b540c1cfa92c2de5ec818db3aa9fc817395>
+- Inspected: 15 October 2026, IndexPirBackend, Simple/Frodo implementations, wire bundles,
+  client/server methods, geometry-dependent correctness bounds, LICENSE/NOTICE and SECURITY policy.
+- Source findings: exposes direct index-PIR engines and a two-segment keyword wrapper; defaults
+  and single-in-flight state are retained. Source declares Apache-2.0; prototype is unaudited and
+  setup/network encoding remains the integrator's responsibility.
+- Local evidence: [EXP-006](../experiments/EXP-006-pir-baseline/summary.md), all eight real cases
+  complete; archive SHA-256 and active declared licence inventory retained with reproduction code.
+- Limitations: no privacy proof, independent security/legal audit, transport benchmark, production
+  adoption, live-update measurement or larger-corpus advantage is established.
+- Linked questions: `RQ-005`, `RQ-006`
+
+## SRC-016: Helios consensus core and retained fixtures
+
+- Type: pinned repository implementation and synthetic test vectors
+- URL: <https://github.com/a16z/helios/tree/2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core>
+- Revision: `2af9b41887e069144ee56cd710f3ddca195473f8`; inspected 15 October 2026
+- Relevant paths: `src/consensus_core.rs`, `src/types/mod.rs`, `src/proof.rs`, `tests/runner/mod.rs`,
+  `testdata/deneb/{advance_finality_without_sync_committee,light_client_sync}`; higher-level
+  `ethereum/src/consensus.rs` and `core/src/consensus.rs` inspected for output-channel comparison.
+- Findings: explicit verify/apply APIs, normal quorum finality, separate force-update transition;
+  payload state root differs from SSZ execution root. Higher-level finalized channel supplies a
+  trusted block hash at this revision. The source's hash-only Gloas headers need a separate
+  execution-header hash check to obtain state root.
+- Retention: EXP-007 source archives, MIT Helios licence, Apache-2.0 hashing patch revision
+  `7ee70944ed4fabe301551da8c447e4f4ae5e6c35`, exact extracted inventory and probe lockfile.
+- Limitations: synthetic minimal Deneb vectors are not live Sepolia, production checkpoint trust,
+  active-fork coverage or a complete security/dependency audit. No inherited performance claim.
+- Linked question: `RQ-007`; local synthetic result: `EXP-007`; proposed decision: `ADR-006`.

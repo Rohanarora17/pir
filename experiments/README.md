@@ -42,6 +42,18 @@ Ethereum results use separate experiment identifiers.
   and non-zero address cases.
 - [`EXP-002`](EXP-002-block-hash-pinning/): EIP-1898 provider compatibility, historical retention
   and fail-closed block-hash proof collection.
+- [`EXP-003`](EXP-003-real-proof-corpus/): declared 32-address real proof corpus, structural
+  completeness, consistent account data, failure retention and offline replay audit.
+- [`EXP-004`](EXP-004-verifier-comparison/): two pinned Rust verifiers on the same 32 real records,
+  zero/exclusion handling, 313 negative checks per candidate and the accepted eth_trie choice.
+- [`EXP-005`](EXP-005-record-geometry/): proof/JSON/binary sizes, node duplication, padding costs,
+  explicit oversized-row failures and real encode/pad/decode/verify round trips. Candidate only.
+- [`EXP-006`](EXP-006-pir-baseline/): pinned CPU index/keyword PIR client/server computation, 256
+  verified real reads, setup/online byte and memory costs, admission failures and licence evidence.
+  No network-service or consensus-authentication claim.
+
+- [`EXP-007`](EXP-007-consensus-root/): pinned Helios consensus-core synthetic replay, exact finalized
+  execution context and root/freshness admission tests. No live Sepolia authentication.
 
 ## Security and privacy
 

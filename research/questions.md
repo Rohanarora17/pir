@@ -126,15 +126,18 @@ execution-client functionality into the protocol crate.
 
 ### Status
 
-`open`
+`answered`: eth_trie selected in accepted ADR-003; the reusable `pvrpc-verifier` now recovers
+all 32 real records and rejects adversarial/binding cases. Root provenance remains unverified.
 
 ### Linked experiments
 
-None yet. Day 5 will register verifier comparisons.
+[EXP-003](../experiments/EXP-003-real-proof-corpus/) supplies 32 real proof fixtures for Day 5.
+It does not itself verify those proofs. [EXP-004](../experiments/EXP-004-verifier-comparison/) verifies
+the same 32 records with two pinned libraries and tests corruption and false-absence rejection.
 
 ### Linked decisions
 
-None yet.
+[ADR-003: eth_trie verifier](../docs/decisions/ADR-003-eth-trie-proof-verifier.md).
 
 ### Revisit condition
 
@@ -174,15 +177,18 @@ not from two hand-selected fixtures.
 
 ### Status
 
-`open`
+`investigating`: Day 6 measurements and candidate round trips are complete; final representation
+and geometry await PIR backend constraints and the Day 9 comparison.
 
 ### Linked experiments
 
-None yet. Day 6 will register the record-shape experiment.
+[EXP-003](../experiments/EXP-003-real-proof-corpus/) supplies 32 real proof fixtures.
+[EXP-005](../experiments/EXP-005-record-geometry/summary.md) measures raw/JSON/binary sizes,
+duplication, padding and explicit overflow failure, with verified candidate round trips.
 
 ### Linked decisions
 
-None yet.
+[ADR-004: Candidate record layout](../docs/decisions/ADR-004-candidate-record-layout.md), proposed.
 
 ### Revisit condition
 
@@ -220,15 +226,18 @@ requires GPU serving or CPU service is already the blocking cost.
 
 ### Status
 
-`open`
+`investigating`: EXP-006 reproduces real CPU reads using direct index and full keyword PIR with
+both pinned engines. The small corpus favors whole-generation download in bandwidth. Final
+backend acceptance and larger-corpus/network costs remain open.
 
 ### Linked experiments
 
-None yet. Day 7 will register backend smoke tests.
+[EXP-006](../experiments/EXP-006-pir-baseline/summary.md): 256 real verified reads across eight
+cases, setup/online byte and local timing measurements, memory scopes and admission failures.
 
 ### Linked decisions
 
-None yet.
+[ADR-005](../docs/decisions/ADR-005-index-pir-baseline.md), proposed direct-index baseline.
 
 ### Revisit condition
 
@@ -267,15 +276,17 @@ test succeeds.
 
 ### Status
 
-`open`
+`investigating`: pinned source licence/NOTICE, a reproducible build and the normal dependency
+graph's declared licences are recorded. Project repository licence and final distribution policy
+remain undecided; no completed legal/security clearance is claimed.
 
 ### Linked experiments
 
-Shares the Day 7 backend records with `RQ-005`.
+[EXP-006 licence review](../experiments/EXP-006-pir-baseline/license-review.md) and retained source.
 
 ### Linked decisions
 
-None yet.
+[ADR-005](../docs/decisions/ADR-005-index-pir-baseline.md), proposed; distribution remains open.
 
 ### Revisit condition
 
@@ -314,15 +325,19 @@ private storage key.
 
 ### Status
 
-`open`
+`investigating`
 
 ### Linked experiments
 
-None yet. Day 8 will register the adapter probe.
+[EXP-007](../experiments/EXP-007-consensus-root/summary.md) verifies retained synthetic Helios
+updates and root admission. Fixture feasibility is established; live Sepolia/checkpoint provenance,
+active-fork coverage and final integration acceptance remain pending. Rohan selected Helios in
+accepted ADR-007; selecting the implementation does not close the adapter investigation.
 
 ### Linked decisions
 
-None yet.
+[ADR-006](../docs/decisions/ADR-006-consensus-root-boundary.md), proposed integration mode.
+[ADR-007](../docs/decisions/ADR-007-helios-light-client.md), accepted Helios selection.
 
 ### Revisit condition
 
@@ -333,8 +348,10 @@ trust dependency inconsistent with the threat model.
 
 ### Why it changes the design
 
-For a small public shard, downloading the complete dataset may be simpler, cheaper and more private
-than running PIR. The project needs a measured crossover rather than assuming PIR is always useful.
+The project needs to establish PIR's operating costs at meaningful corpus sizes and client workloads.
+The 32-record corpus is a functional integration fixture, not representative evidence for or against
+PIR's scalability. Whole-generation download is a reference baseline across the scale sweep, not the
+architecture selected by a tiny-corpus result.
 
 ### Options
 
@@ -347,10 +364,30 @@ than running PIR. The project needs a measured crossover rather than assuming PI
 Using identical roots and logical queries, sweep corpus sizes and measure upstream and downstream
 bytes, preprocessing, client state, latency and repeated-read cost for all three paths.
 
+Separate two kinds of evidence:
+
+- Functional correctness: retain the 32 real records for proof recovery, absence and rejection tests.
+- Scale evaluation: increase logical record count and total database bytes across multiple orders
+  of magnitude, with declared record geometry and fixed security parameters. Choose concrete sizes
+  after estimating setup, server and client memory; do not reduce security parameters to fit a run.
+
+Synthetic or repeated-record workloads can isolate backend scaling but must be labelled separately
+from larger real Ethereum corpora. Repetition does not establish realistic trie-node sharing, proof
+diversity, address-map cost or snapshot-update behavior. Representation comparisons require those
+properties to be measured on a declared real corpus or explicitly left unmeasured.
+
+Measure cold initialization, warm reads on the same generation and transitions to new generations
+separately. Include public metadata/index maps, initial hints and hint refresh, client storage,
+server memory/work, query rounds, and latency distributions. Count whole-generation download once
+when cached. Network results require actual transport measurements or a clearly labelled model;
+local compute timings alone do not establish end-to-end performance.
+
 ### Evidence required
 
 Results linked to the same corpus generator, block root, hardware, network conditions, backend
 parameters and repetition count. Report single-read and amortised repeated-read results separately.
+Report resource limits and failed or unrun sizes. Do not extrapolate the 32-record byte comparison
+into a practical recommendation or an unmeasured crossover.
 
 ### Decision criterion
 
