@@ -1,0 +1,19 @@
+test_admission_requires_normal_pressure_and_headroom (test_guard.GuardTests.test_admission_requires_normal_pressure_and_headroom) ... ok
+test_each_runtime_limit_stops_the_worker (test_guard.GuardTests.test_each_runtime_limit_stops_the_worker) ... ok
+test_parse_and_fail_on_unknown_telemetry (test_guard.GuardTests.test_parse_and_fail_on_unknown_telemetry) ... ok
+test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure (test_guard.GuardTests.test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure) ... FAIL
+test_telemetry_failure_kills_child_instead_of_continuing_unmonitored (test_guard.GuardTests.test_telemetry_failure_kills_child_instead_of_continuing_unmonitored) ... ok
+
+======================================================================
+FAIL: test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure (test_guard.GuardTests.test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-009-guarded-local-scale/test_guard.py", line 41, in test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure
+    self.assertEqual(result["exit_code"], -signal.SIGKILL)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 127 != -9
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.006s
+
+FAILED (failures=1)

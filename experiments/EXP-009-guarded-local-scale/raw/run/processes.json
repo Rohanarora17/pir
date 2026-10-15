@@ -1,0 +1,32 @@
+[
+  {
+    "case": "simple-index-131072-3072",
+    "status": "completed",
+    "reason": null,
+    "exit_code": 0,
+    "wall_seconds": 92.60527712502517,
+    "peak_process_rss_bytes": 2029993984
+  },
+  {
+    "case": "simple-index-131072-4096",
+    "status": "completed",
+    "reason": null,
+    "exit_code": 0,
+    "wall_seconds": 115.24435275001451,
+    "peak_process_rss_bytes": 2626650112
+  },
+  {
+    "case": "simple-index-524288-3072",
+    "status": "deferred",
+    "reason": "estimate_above_safe_budget",
+    "safe_budget_bytes": 3758096384,
+    "estimated_peak_working_bytes": 9143564044
+  },
+  {
+    "case": "simple-index-524288-4096",
+    "status": "deferred",
+    "reason": "estimate_above_safe_budget",
+    "safe_budget_bytes": 3758096384,
+    "estimated_peak_working_bytes": 11986694354
+  }
+]

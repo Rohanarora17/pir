@@ -1,0 +1,12 @@
+test_admission_requires_normal_pressure_and_headroom (test_guard.GuardTests.test_admission_requires_normal_pressure_and_headroom) ... ok
+test_each_runtime_limit_stops_the_worker (test_guard.GuardTests.test_each_runtime_limit_stops_the_worker) ... ok
+test_healthy_tiny_child_completes_with_priority_lowering (test_guard.GuardTests.test_healthy_tiny_child_completes_with_priority_lowering) ... ok
+test_parse_and_fail_on_unknown_telemetry (test_guard.GuardTests.test_parse_and_fail_on_unknown_telemetry) ... ok
+test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure (test_guard.GuardTests.test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure) ... ok
+test_telemetry_failure_kills_child_instead_of_continuing_unmonitored (test_guard.GuardTests.test_telemetry_failure_kills_child_instead_of_continuing_unmonitored) ... ok
+test_unavailable_rss_for_live_child_stops_instead_of_assuming_exit (test_guard.GuardTests.test_unavailable_rss_for_live_child_stops_instead_of_assuming_exit) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.030s
+
+OK

@@ -1,0 +1,86 @@
+{
+  "experiment_id": "EXP-009",
+  "research_questions": [
+    "RQ-005",
+    "RQ-008"
+  ],
+  "claim_type": "synthetic result",
+  "started_at": "2026-10-15T19:28:29.407076+00:00",
+  "completed_at": "2026-10-15T19:31:57.339261+00:00",
+  "machine": {
+    "hardware_sysctl": "hw.memsize: 25769803776\nhw.logicalcpu: 14\nmachdep.cpu.brand_string: Apple M4 Pro\n",
+    "physical_memory_bytes": 25769803776,
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O",
+    "logical_cores_used": 1
+  },
+  "software_revisions": {
+    "project_base_revision": "736e43a54309edd46419a8a8c380e7856897213b",
+    "worker_experiment": "EXP-008 unchanged binary",
+    "python": "3.14.0"
+  },
+  "inputs": {
+    "binary_sha256": "aa5642840f8586fa527a558e72e81be651a1e520e2d5d4f29e5957b367847061",
+    "runner_sha256": "3705776519b3fe38217d1c5fd2605ef499d80008f5323fac974a7b72f014a5f9",
+    "generator": "EXP-008 SplitMix64-v1; synthetic bytes, no Ethereum state"
+  },
+  "parameters": {
+    "rows": [
+      131072,
+      524288
+    ],
+    "record_bytes": [
+      3072,
+      4096
+    ],
+    "queries_per_case": 32,
+    "policy": {
+      "normal_pressure_flag": 1,
+      "minimum_start_free_percent": 30,
+      "stop_free_percent_below": 25,
+      "max_estimated_bytes": 3758096384,
+      "rss_stop_bytes": 3221225472,
+      "swap_growth_stop_bytes": 134217728,
+      "timeout_seconds": 240,
+      "poll_seconds": 0.25,
+      "nice_increment": 10
+    },
+    "security": {
+      "lwe_dimension": 1275,
+      "sigma": 6.4,
+      "ciphertext_modulus_log2": 32,
+      "plaintext_bits": 8,
+      "upstream_correctness_kappa": 40
+    }
+  },
+  "metrics": [
+    {
+      "name": "guard_telemetry_and_status",
+      "unit": "bytes, percentage, seconds",
+      "raw_result_file": "*/guard.json"
+    },
+    {
+      "name": "unchanged_worker_performance",
+      "unit": "bytes and microseconds",
+      "raw_result_file": "*-*.json"
+    }
+  ],
+  "case_status_counts": {
+    "completed": 2,
+    "deferred": 2
+  },
+  "validation": {
+    "host_guard_tests_passed": 7,
+    "completed_cases": 2,
+    "sampled_reads_passed": 64,
+    "deferred_cases": 2,
+    "aborted_cases": 0,
+    "pressure_flags_during_completed_cases": [
+      1
+    ],
+    "maximum_recorded_swap_growth_bytes": 0,
+    "guard_thresholds_weakened": false,
+    "user_feedback": "No noticeable slowdown",
+    "vm_provisioned": false,
+    "post_run_guard_hardening": "unreadable RSS of a live worker now stops immediately; exact executed source retained; all measured samples had RSS"
+  }
+}

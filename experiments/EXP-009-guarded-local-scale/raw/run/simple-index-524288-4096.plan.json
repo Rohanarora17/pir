@@ -1,0 +1,16 @@
+{
+  "admitted": true,
+  "database_payload_bytes": 2147483648,
+  "estimated_peak_working_bytes": 11986694354,
+  "hint_bytes": 229785600,
+  "matrix_columns": 45056,
+  "matrix_rows": 47663,
+  "max_plaintext_bits": 8,
+  "memory_budget_bytes": 17179869184,
+  "public_matrix_bytes": 243081300,
+  "record_bytes": 4096,
+  "reshape_k": 11,
+  "rows": 524288,
+  "server_u32_database_bytes": 8589934592,
+  "skip_reason": null
+}

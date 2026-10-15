@@ -1,0 +1,10 @@
+test_admission_requires_normal_pressure_and_headroom (test_guard.GuardTests.test_admission_requires_normal_pressure_and_headroom) ... ok
+test_each_runtime_limit_stops_the_worker (test_guard.GuardTests.test_each_runtime_limit_stops_the_worker) ... ok
+test_parse_and_fail_on_unknown_telemetry (test_guard.GuardTests.test_parse_and_fail_on_unknown_telemetry) ... ok
+test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure (test_guard.GuardTests.test_real_sleeping_child_is_killed_and_reaped_on_simulated_pressure) ... ok
+test_telemetry_failure_kills_child_instead_of_continuing_unmonitored (test_guard.GuardTests.test_telemetry_failure_kills_child_instead_of_continuing_unmonitored) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK

@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-15T19:32:59.002959+00:00",
+  "pressure_and_swap": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 8192.00M  used = 6896.31M  free = 1295.69M  (encrypted)",
+  "free_indicator": "The system has 25769803776 (1572864 pages with a page size of 16384).\nSystem-wide memory free percentage: 49%",
+  "thermal_status": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded",
+  "remaining_benchmark_workers": []
+}

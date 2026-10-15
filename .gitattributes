@@ -7,3 +7,6 @@ experiments/EXP-007-consensus-root/raw/*.log -whitespace
 
 # Preserve byte-exact scale-run and verification output.
 experiments/EXP-008-synthetic-pir-scale/raw/*.log -whitespace
+
+# Retain original guarded-run diagnostics and test output.
+experiments/EXP-009-guarded-local-scale/raw/*.log -whitespace

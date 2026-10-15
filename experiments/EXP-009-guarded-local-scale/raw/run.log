@@ -1,0 +1,5 @@
+simple-index-131072-3072 completed None
+simple-index-131072-4096 completed None
+simple-index-524288-3072 deferred estimate_above_safe_budget
+simple-index-524288-4096 deferred estimate_above_safe_budget
+{"completed": 2, "deferred": 2}
