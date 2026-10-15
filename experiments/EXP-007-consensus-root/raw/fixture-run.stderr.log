@@ -1,0 +1,8 @@
+warning: use of deprecated method `sha2::digest::generic_array::GenericArray::<T, N>::as_slice`: please upgrade to generic-array 1.x
+   --> /Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-007-consensus-root/upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/src/proof.rs:157:65
+    |
+157 |         derived_root = B256::from_slice(hasher.finalize_reset().as_slice());
+    |                                                                 ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+

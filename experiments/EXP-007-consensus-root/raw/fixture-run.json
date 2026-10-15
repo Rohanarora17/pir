@@ -1,0 +1,185 @@
+{
+  "claim_type": "synthetic result",
+  "execution_rpc_used": false,
+  "experiment_id": "EXP-007",
+  "force_update_used": false,
+  "helios_revision": "2af9b41887e069144ee56cd710f3ddca195473f8",
+  "live_sync": false,
+  "network": "retained upstream minimal Deneb fixture; not Sepolia/mainnet",
+  "old_sepolia_corpus_authenticated": false,
+  "storage_query_sent": false,
+  "trace": [
+    {
+      "admitted_context": {
+        "beacon_root": "0x805e4ee1f71217879435ee1129804df0b5dcb9281fa1f6c51f876e9574c6e223",
+        "beacon_slot": 24,
+        "checked_at_slot": 41,
+        "checkpoint": {
+          "beacon_root": "0xc0f6807024e3a40cea50955a9daa481045e44a5e08ccb5aed4d1cd705fc624d4",
+          "source": "retained Helios minimal Deneb meta.yaml; synthetic test trust anchor only"
+        },
+        "execution_block_hash": "0x0bc2540c4aeaede1b8145ef55392a0900a46bfd36e241d338125d3b803fae9b9",
+        "execution_block_number": 2,
+        "execution_state_root": "0x2020202020202020202020202020202020202020202020202020202020202020",
+        "freshness": {
+          "max_checkpoint_age_slots": 128,
+          "max_finalized_lag_slots": 32
+        },
+        "network": {
+          "chain_id": 0,
+          "genesis_validators_root": "0x0a08c27fe4ece2483f9e581f78c66379a06f96e9c24cd1390594ff939b26f95b"
+        }
+      },
+      "committee_size": 32,
+      "current_slot": 41,
+      "fixture": "update_0xbccdacbfe0f0bfd10367dfc318b479e2830ed7c5119151ad0eb917fc66d51203_sf",
+      "heads": {
+        "finalized_beacon_root": "0x805e4ee1f71217879435ee1129804df0b5dcb9281fa1f6c51f876e9574c6e223",
+        "finalized_execution_payload_root": "0xd101569f91f185612958585ddff28a06bc2d3439a58be530b4cf54e716c32b37",
+        "finalized_slot": 24,
+        "optimistic_beacon_root": "0xbccdacbfe0f0bfd10367dfc318b479e2830ed7c5119151ad0eb917fc66d51203",
+        "optimistic_execution_payload_root": "0xee31952ed8b21f21248d82904168363317632967fcaa6314478a99b6b25516ed",
+        "optimistic_slot": 40
+      },
+      "participants": 32
+    },
+    {
+      "admitted_context": {
+        "beacon_root": "0x2cfb9d0a1386595c9a243fe1d09852333a2b33c7456274a0d00351b66d50da03",
+        "beacon_slot": 72,
+        "checked_at_slot": 89,
+        "checkpoint": {
+          "beacon_root": "0xc0f6807024e3a40cea50955a9daa481045e44a5e08ccb5aed4d1cd705fc624d4",
+          "source": "retained Helios minimal Deneb meta.yaml; synthetic test trust anchor only"
+        },
+        "execution_block_hash": "0xc43a2ac1a18661384e954cb438d1e03f7c2c8de882ce6df99c34a2d42a567e10",
+        "execution_block_number": 20,
+        "execution_state_root": "0x2020202020202020202020202020202020202020202020202020202020202020",
+        "freshness": {
+          "max_checkpoint_age_slots": 128,
+          "max_finalized_lag_slots": 32
+        },
+        "network": {
+          "chain_id": 0,
+          "genesis_validators_root": "0x0a08c27fe4ece2483f9e581f78c66379a06f96e9c24cd1390594ff939b26f95b"
+        }
+      },
+      "committee_size": 32,
+      "current_slot": 89,
+      "fixture": "update_0xd4ce0e0859a2174eae7aaf78f495881993cbc87fd3ce4e989e06e394997b392d_xf",
+      "heads": {
+        "finalized_beacon_root": "0x2cfb9d0a1386595c9a243fe1d09852333a2b33c7456274a0d00351b66d50da03",
+        "finalized_execution_payload_root": "0x917dc78183daf0b443486d4ffa8fc9d7f5943f9377cd061c761e7d558338bd67",
+        "finalized_slot": 72,
+        "optimistic_beacon_root": "0xd4ce0e0859a2174eae7aaf78f495881993cbc87fd3ce4e989e06e394997b392d",
+        "optimistic_execution_payload_root": "0x8951d9500ab722a8abf4e94659fdfd8a1d59625f509d17883a783523d9cd93ef",
+        "optimistic_slot": 88
+      },
+      "participants": 32
+    },
+    {
+      "admitted_context": {
+        "beacon_root": "0x2cfb9d0a1386595c9a243fe1d09852333a2b33c7456274a0d00351b66d50da03",
+        "beacon_slot": 72,
+        "checked_at_slot": 97,
+        "checkpoint": {
+          "beacon_root": "0xc0f6807024e3a40cea50955a9daa481045e44a5e08ccb5aed4d1cd705fc624d4",
+          "source": "retained Helios minimal Deneb meta.yaml; synthetic test trust anchor only"
+        },
+        "execution_block_hash": "0xc43a2ac1a18661384e954cb438d1e03f7c2c8de882ce6df99c34a2d42a567e10",
+        "execution_block_number": 20,
+        "execution_state_root": "0x2020202020202020202020202020202020202020202020202020202020202020",
+        "freshness": {
+          "max_checkpoint_age_slots": 128,
+          "max_finalized_lag_slots": 32
+        },
+        "network": {
+          "chain_id": 0,
+          "genesis_validators_root": "0x0a08c27fe4ece2483f9e581f78c66379a06f96e9c24cd1390594ff939b26f95b"
+        }
+      },
+      "committee_size": 32,
+      "current_slot": 97,
+      "fixture": "update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_xx",
+      "heads": {
+        "finalized_beacon_root": "0x2cfb9d0a1386595c9a243fe1d09852333a2b33c7456274a0d00351b66d50da03",
+        "finalized_execution_payload_root": "0x917dc78183daf0b443486d4ffa8fc9d7f5943f9377cd061c761e7d558338bd67",
+        "finalized_slot": 72,
+        "optimistic_beacon_root": "0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15",
+        "optimistic_execution_payload_root": "0x1426aa1299512e05c6fde76b69f54db2fcac3cd1d3e1ebc234742d42560701d7",
+        "optimistic_slot": 96
+      },
+      "participants": 32
+    },
+    {
+      "admitted_context": {
+        "beacon_root": "0x606e986b8b1228cba4ea73cd9d657b8fc88be82a73db183ab51feb5587fd59f6",
+        "beacon_slot": 80,
+        "checked_at_slot": 97,
+        "checkpoint": {
+          "beacon_root": "0xc0f6807024e3a40cea50955a9daa481045e44a5e08ccb5aed4d1cd705fc624d4",
+          "source": "retained Helios minimal Deneb meta.yaml; synthetic test trust anchor only"
+        },
+        "execution_block_hash": "0xfe530efb8eb3ef8c0911d9d4fed422ab2c5ae9f7171bb73cd99c28152e6773f8",
+        "execution_block_number": 28,
+        "execution_state_root": "0x2020202020202020202020202020202020202020202020202020202020202020",
+        "freshness": {
+          "max_checkpoint_age_slots": 128,
+          "max_finalized_lag_slots": 32
+        },
+        "network": {
+          "chain_id": 0,
+          "genesis_validators_root": "0x0a08c27fe4ece2483f9e581f78c66379a06f96e9c24cd1390594ff939b26f95b"
+        }
+      },
+      "committee_size": 32,
+      "current_slot": 97,
+      "fixture": "update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_xf",
+      "heads": {
+        "finalized_beacon_root": "0x606e986b8b1228cba4ea73cd9d657b8fc88be82a73db183ab51feb5587fd59f6",
+        "finalized_execution_payload_root": "0x9ecc611e2221ae48834291bad61f359e583817862102a0f5f0f826b0ec50e500",
+        "finalized_slot": 80,
+        "optimistic_beacon_root": "0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15",
+        "optimistic_execution_payload_root": "0x1426aa1299512e05c6fde76b69f54db2fcac3cd1d3e1ebc234742d42560701d7",
+        "optimistic_slot": 96
+      },
+      "participants": 32
+    },
+    {
+      "admitted_context": {
+        "beacon_root": "0x606e986b8b1228cba4ea73cd9d657b8fc88be82a73db183ab51feb5587fd59f6",
+        "beacon_slot": 80,
+        "checked_at_slot": 97,
+        "checkpoint": {
+          "beacon_root": "0xc0f6807024e3a40cea50955a9daa481045e44a5e08ccb5aed4d1cd705fc624d4",
+          "source": "retained Helios minimal Deneb meta.yaml; synthetic test trust anchor only"
+        },
+        "execution_block_hash": "0xfe530efb8eb3ef8c0911d9d4fed422ab2c5ae9f7171bb73cd99c28152e6773f8",
+        "execution_block_number": 28,
+        "execution_state_root": "0x2020202020202020202020202020202020202020202020202020202020202020",
+        "freshness": {
+          "max_checkpoint_age_slots": 128,
+          "max_finalized_lag_slots": 32
+        },
+        "network": {
+          "chain_id": 0,
+          "genesis_validators_root": "0x0a08c27fe4ece2483f9e581f78c66379a06f96e9c24cd1390594ff939b26f95b"
+        }
+      },
+      "committee_size": 32,
+      "current_slot": 97,
+      "fixture": "update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_sf",
+      "heads": {
+        "finalized_beacon_root": "0x606e986b8b1228cba4ea73cd9d657b8fc88be82a73db183ab51feb5587fd59f6",
+        "finalized_execution_payload_root": "0x9ecc611e2221ae48834291bad61f359e583817862102a0f5f0f826b0ec50e500",
+        "finalized_slot": 80,
+        "optimistic_beacon_root": "0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15",
+        "optimistic_execution_payload_root": "0x1426aa1299512e05c6fde76b69f54db2fcac3cd1d3e1ebc234742d42560701d7",
+        "optimistic_slot": 96
+      },
+      "participants": 32
+    }
+  ],
+  "trust_anchor": "fixture meta.yaml; test-only",
+  "updates_verified": 5
+}

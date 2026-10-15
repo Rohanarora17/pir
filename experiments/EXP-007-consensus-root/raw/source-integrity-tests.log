@@ -1,0 +1,14 @@
+test_clean_tree_is_reusable (test_prepare_source.SourceIntegrity.test_clean_tree_is_reusable) ... ok
+test_extra_build_script_is_rejected (test_prepare_source.SourceIntegrity.test_extra_build_script_is_rejected) ... ok
+test_modified_source_is_rejected (test_prepare_source.SourceIntegrity.test_modified_source_is_rejected) ... ok
+test_symlink_with_matching_bytes_is_rejected (test_prepare_source.SourceIntegrity.test_symlink_with_matching_bytes_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+OK
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture

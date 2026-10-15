@@ -1,0 +1,20 @@
+warning: use of deprecated method `sha2::digest::generic_array::GenericArray::<T, N>::as_slice`: please upgrade to generic-array 1.x
+   --> /Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-007-consensus-root/upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/src/proof.rs:157:65
+    |
+157 |         derived_root = B256::from_slice(hasher.finalize_reset().as_slice());
+    |                                                                 ^^^^^^^^
+    |
+    = note: `#[warn(deprecated)]` on by default
+
+warning: `helios-consensus-core` (lib) generated 1 warning
+   Compiling pvrpc-consensus-probe v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-007-consensus-root/probe)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.00s
+     Running tests/root_boundary.rs (/private/tmp/pvrpc-consensus-target/debug/deps/root_boundary-edc3e3bc3b808e61)
+
+running 3 tests
+test rejects_wrong_checkpoint_instead_of_trusting_a_supplied_header ... ok
+test bootstrap_alone_is_not_exported_as_new_finality ... ok
+test advances_finality_only_after_verified_update_and_checks_freshness ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+

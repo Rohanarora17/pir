@@ -1,0 +1,34 @@
+test_clean_tree_is_reusable (test_prepare_source.SourceIntegrity.test_clean_tree_is_reusable) ... ok
+test_extra_build_script_is_rejected (test_prepare_source.SourceIntegrity.test_extra_build_script_is_rejected) ... FAIL
+test_modified_source_is_rejected (test_prepare_source.SourceIntegrity.test_modified_source_is_rejected) ... ok
+test_symlink_with_matching_bytes_is_rejected (test_prepare_source.SourceIntegrity.test_symlink_with_matching_bytes_is_rejected) ... FAIL
+
+======================================================================
+FAIL: test_extra_build_script_is_rejected (test_prepare_source.SourceIntegrity.test_extra_build_script_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-007-consensus-root/test_prepare_source.py", line 31, in test_extra_build_script_is_rejected
+    with self.assertRaises(SystemExit): prepare_source.materialize(self.root, self.sources)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: SystemExit not raised
+
+======================================================================
+FAIL: test_symlink_with_matching_bytes_is_rejected (test_prepare_source.SourceIntegrity.test_symlink_with_matching_bytes_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-007-consensus-root/test_prepare_source.py", line 43, in test_symlink_with_matching_bytes_is_rejected
+    with self.assertRaises(SystemExit): prepare_source.materialize(self.root, self.sources)
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: SystemExit not raised
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.008s
+
+FAILED (failures=2)
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture
+verified unmodified source: fixture

@@ -1,2 +1,3 @@
-# Preserve the byte-exact licence inventory, including empty trailing licence fields.
+# Preserve byte-exact retained tool output, including empty licence fields and final log lines.
 experiments/EXP-006-pir-baseline/raw/license-tree.txt -whitespace
+experiments/EXP-007-consensus-root/raw/*.log -whitespace

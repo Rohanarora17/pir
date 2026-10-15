@@ -1,0 +1,105 @@
+{
+  "claim_type": "synthetic result",
+  "completed_at": "2026-10-15T17:17:58.880118+00:00",
+  "experiment_id": "EXP-007",
+  "inputs": {
+    "checkpoint_source": "retained fixture meta.yaml; test trust anchor only",
+    "fixture_sha256": {
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/bootstrap.ssz_snappy": "21be8a09438cf05ff7ca2bda86262ed95d63dab142778b9db7e0637d121559fc",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/config.yaml": "a02195915bcf18bd4aa5b6e41d7e5d6c9629a638f97c3ce144b4d760ee3bdcaa",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/meta.yaml": "4256b4b5dd0be3447670d155b853c9aaa49cdccf0f3ce741c451510b72a0cd79",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/steps.yaml": "b3d3c81f4aa2f081ebe601cd8b742466e793e2384f6600675310ae247e39198e",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_sf.ssz_snappy": "b129aac2fa60d95208f5c36080d7bf5cd8d69404e59026855fdcb5f23aa778e4",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_xf.ssz_snappy": "68853e85b52287aecfa8afbb8d168a54ed8025bd37602c205e15010b6211ba3e",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/update_0x9bca7308ab8f1ee5348b3ff6f809992c98e62bc1b97b2057e135e15a151c0b15_xx.ssz_snappy": "00b1ca0c650aaeb3bba57cff49ed39c76c790546cfcf5fafeeae1caa30d8c572",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/update_0xbccdacbfe0f0bfd10367dfc318b479e2830ed7c5119151ad0eb917fc66d51203_sf.ssz_snappy": "f2f2942d5e91dbc08f5114232f61ab617832970f3387ebe8d959e506b3b61a39",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/advance_finality_without_sync_committee/update_0xd4ce0e0859a2174eae7aaf78f495881993cbc87fd3ce4e989e06e394997b392d_xf.ssz_snappy": "907c80ea98bcce70039bec76de95c70480c84cf217b42517aede2acc9d5fbcc3",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/bootstrap.ssz_snappy": "21be8a09438cf05ff7ca2bda86262ed95d63dab142778b9db7e0637d121559fc",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/config.yaml": "a02195915bcf18bd4aa5b6e41d7e5d6c9629a638f97c3ce144b4d760ee3bdcaa",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/meta.yaml": "4256b4b5dd0be3447670d155b853c9aaa49cdccf0f3ce741c451510b72a0cd79",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/steps.yaml": "30df03d48dc9251674ca65da0c608465f9b769cca5f399a992f8a7fd4d093101",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0x03a58e8f457512a7988d38cb169b34b5da8c79051d3c886e98d36aa128a3e070_sf.ssz_snappy": "5cf39e72270b454f24c2e00e15d9e363845d960e2b9678028814103b51d4b3a3",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0x05165fba6c41bc5274d86d7794b06698d52bd4d275240a2b3ec08b04cf0635a8_xx.ssz_snappy": "94d149f3c2bd03248e0a4f6c94b27c47918a9ad7180c6fb3aaf76ae6ccf09bc8",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0x786cfdfb9771e4c1c09ed01d74ecc5f8afe6c938e606ebc64d97ed7bdd67c556_sf.ssz_snappy": "b9cb3198160d38e83f2c516483e424aa3b85f6ee85b4303df2179eae590348df",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0x8f3184a43451ee317bbef720462dabc4178523e729455b683d87532e37b0ddaf_sx.ssz_snappy": "4957a51955dead56ab8ca989a70d218337732d3c7615fb0bd7d9661ca4989f71",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0xbccdacbfe0f0bfd10367dfc318b479e2830ed7c5119151ad0eb917fc66d51203_sf.ssz_snappy": "f2f2942d5e91dbc08f5114232f61ab617832970f3387ebe8d959e506b3b61a39",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0xc6c5ddcf90452de44c4999ae023184a2cd06131698243ce6600ee4f64b9619b3_xf.ssz_snappy": "e7150d9f50170bf8d0658eaa3af24a97732153c0fe54cbe0c255c0b1f2b36f25",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0xd4ce0e0859a2174eae7aaf78f495881993cbc87fd3ce4e989e06e394997b392d_sf.ssz_snappy": "7d82dcc8cb019ff3371cf8c4fd262936f605b66dd2436213cee8c9d67a1f8fc9",
+      "upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core/testdata/deneb/light_client_sync/update_0xf6e7eb9c1fdcdfb8cb82e22f8bf6ca413a6a5124bc98475f456a82d863a47c8b_sf.ssz_snappy": "364f404b69cbdf7f4bab3e2465207951fe761f46dc7b4bb0fdff8915f252b8fc"
+    },
+    "local_chain_label": 0,
+    "network": "synthetic upstream minimal Deneb test vectors, not live Ethereum",
+    "real_corpus_authenticated": false
+  },
+  "machine": {
+    "architecture": "arm64",
+    "cpu_model": "not queried",
+    "execution": "offline single-process sequential replay, debug profile",
+    "gpu_used": false,
+    "host_ram": "not measured",
+    "logical_cores": 14,
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O"
+  },
+  "metrics": [
+    {
+      "name": "finalized_and_optimistic_slots_and_roots",
+      "raw_result_file": "raw/fixture-run.json",
+      "unit": "slots, hashes, execution block fields"
+    },
+    {
+      "name": "tests_and_reproduction",
+      "raw_result_file": "raw/reproduction.log",
+      "unit": "passing test counts, command success"
+    }
+  ],
+  "parameters": {
+    "additional_companion_updates_in_test": 5,
+    "bootstrap_now_slot": 41,
+    "checkpoint_fallback": "none",
+    "companion_timeout_test_lag_slots": 64,
+    "fixture_seconds_per_slot": 6,
+    "force_update": false,
+    "fork_schedule": "retained Deneb config: through Deneb at epoch0, later forks disabled",
+    "max_checkpoint_age_slots": 128,
+    "max_finalized_lag_slots": 32,
+    "network_transport": "none",
+    "normal_updates_verified_in_trace": 5,
+    "preset": "MinimalConsensusSpec",
+    "state_root_extraction": "finalized_header.execution().state_root(), not execution_root()",
+    "sync_committee_size": 32,
+    "update_current_slots": [
+      41,
+      89,
+      97,
+      97,
+      97
+    ]
+  },
+  "research_questions": [
+    "RQ-007"
+  ],
+  "software_revisions": {
+    "alloy_resolved_version": "2.5.0",
+    "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+    "ethereum_hashing_archive_sha256": "5d179c5229158ab349454c575f4ec1e628543558abcb1d97c717606f58abd93f",
+    "ethereum_hashing_revision": "7ee70944ed4fabe301551da8c447e4f4ae5e6c35",
+    "helios_archive_sha256": "4481af452e68dce08a810b8f90802c3f273c6eef1c63db2575ca0d1305494322",
+    "helios_revision": "2af9b41887e069144ee56cd710f3ddca195473f8",
+    "project_base_revision": "67199e294403ce6e18ea8934a5c60ee82a0d2398",
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "tree_state": "dirty; experiment sources and lock retained"
+  },
+  "started_at": "2026-10-15T17:05:55.827571+00:00",
+  "validation": {
+    "clippy_all_targets_deny_warnings": "passed for probe; one upstream deprecated as_slice warning",
+    "composed_pir_proof_consensus_read": false,
+    "format_check": "passed",
+    "independent_review": "P2 fixed and independently retested; no remaining blocking finding",
+    "live_sepolia_sync": false,
+    "main_workspace_tests_passed": 27,
+    "old_corpus_root_authenticated": false,
+    "reproduction_script_exit_status": 0,
+    "rust_boundary_tests_passed": 10,
+    "source_integrity_tests_passed": 4
+  }
+}

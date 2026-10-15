@@ -1,0 +1,88 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.17s
+     Running unittests src/main.rs (/private/tmp/pvrpc-verifier-target/debug/deps/pvrpc_manifest-26f29d324a2cc00c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/validate_command.rs (/private/tmp/pvrpc-verifier-target/debug/deps/validate_command-ec8fda75b73a55c5)
+
+running 2 tests
+test validate_accepts_a_complete_manifest ... ok
+test validate_rejects_a_structurally_invalid_manifest ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+
+     Running unittests src/lib.rs (/private/tmp/pvrpc-verifier-target/debug/deps/pvrpc_protocol-ba98ee610c7a5633)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/json_contract.rs (/private/tmp/pvrpc-verifier-target/debug/deps/json_contract-9fb8a7dca8590e8e)
+
+running 4 tests
+test ethereum_bytes_round_trip_through_json ... ok
+test fixed_size_types_reject_the_wrong_number_of_bytes ... ok
+test ethereum_bytes_use_lowercase_prefixed_hex_in_json ... ok
+test manifests_reject_unknown_fields_instead_of_ignoring_typos ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/manifest_contract.rs (/private/tmp/pvrpc-verifier-target/debug/deps/manifest_contract-7345c229ec989ab3)
+
+running 3 tests
+test rejects_an_unsupported_schema_version ... ok
+test rejects_an_incomplete_snapshot_manifest ... ok
+test accepts_a_complete_snapshot_manifest ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/proof_record_contract.rs (/private/tmp/pvrpc-verifier-target/debug/deps/proof_record_contract-88d095644fad0193)
+
+running 5 tests
+test accepts_a_record_bound_to_the_manifest_and_requested_key ... ok
+test permits_a_zero_balance_when_a_proof_is_present ... ok
+test rejects_a_record_for_another_storage_key ... ok
+test rejects_a_record_from_another_snapshot ... ok
+test rejects_an_out_of_bounds_or_proofless_record ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/private/tmp/pvrpc-verifier-target/debug/deps/pvrpc_verifier-e7d8d50500c9ea38)
+
+running 1 test
+test node_tests::branch_values_cannot_trigger_the_single_high_byte_decoder_ambiguity ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/verification.rs (/private/tmp/pvrpc-verifier-target/debug/deps/verification-9583f7f216cc898e)
+
+running 12 tests
+test absent_contract_is_a_contextual_error_rather_than_a_zero_read ... ok
+test malformed_compact_paths_and_nested_rlp_fail_without_panicking ... ok
+test limits_accept_exact_boundaries_and_reject_one_less ... ok
+test all_compact_flag_bytes_are_fallible_even_at_a_matching_root ... ok
+test independently_binds_snapshot_account_key_and_index ... ok
+test a_matching_envelope_cannot_rescue_an_invalid_root_account_or_key ... ok
+test truncation_corruption_and_missing_proofs_never_become_zero ... ok
+test authenticated_account_bytes_still_require_strict_account_rlp ... ok
+test rejects_forged_values_even_for_proven_absence ... ok
+test recovers_24_inclusions_and_eight_proven_absences_from_real_nodes ... ok
+test proof_node_order_does_not_change_the_result ... ok
+test authenticated_storage_bytes_require_a_canonical_nonzero_u256 ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+   Doc-tests pvrpc_protocol
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests pvrpc_verifier
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

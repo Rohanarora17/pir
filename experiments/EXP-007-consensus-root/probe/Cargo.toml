@@ -1,0 +1,23 @@
+[package]
+name = "pvrpc-consensus-probe"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[workspace]
+resolver = "3"
+
+[dependencies]
+helios-consensus-core = { path = "../upstream/helios-2af9b41887e069144ee56cd710f3ddca195473f8/ethereum/consensus-core" }
+alloy = { version = "2.1.0", default-features = false }
+ssz = { package = "ethereum_ssz", version = "0.9" }
+tree_hash = "0.10"
+snap = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9.34"
+thiserror = "2"
+pvrpc-protocol = { path = "../../../crates/protocol" }
+
+[patch.crates-io]
+ethereum_hashing = { path = "../upstream/ethereum_hashing-7ee70944ed4fabe301551da8c447e4f4ae5e6c35" }
