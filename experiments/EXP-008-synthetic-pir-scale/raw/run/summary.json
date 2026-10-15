@@ -1,0 +1,833 @@
+{
+  "experiment_id": "EXP-008",
+  "claim_type": "synthetic result",
+  "communication_scope": "payload only; optimistic canonical setup minimum; no real manifest/address map/network",
+  "timing_scope": "local compute/framing; no proof verification or transport",
+  "generation_model_scope": "arithmetic independent full rebuild per generation, not measured transitions",
+  "cases": [
+    {
+      "case": "simple-index-32-3072",
+      "status": "completed",
+      "records": 32,
+      "record_bytes": 3072,
+      "matrix_rows": 32,
+      "matrix_columns": 3072,
+      "database_payload_bytes": 98304,
+      "setup_payload_min_bytes": 15667284,
+      "online_request_bytes": 172,
+      "online_response_bytes": 12332,
+      "online_total_bytes": 12504,
+      "client_public_arrays_bytes": 15830400,
+      "estimated_peak_working_bytes": 107176384,
+      "peak_process_rss_bytes": 33685504,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 17927,
+      "client_setup_us": 1685,
+      "first_local_read_us": 568,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 344,
+      "subsequent_local_p95_us": 379,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15679788,
+          "cached_download_bytes": 98304,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15792324,
+          "cached_download_bytes": 98304,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 16917684,
+          "cached_download_bytes": 98304,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 28171284,
+          "cached_download_bytes": 98304,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 157923240,
+        "cached_download_bytes": 983040,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-128-3072",
+      "status": "completed",
+      "records": 128,
+      "record_bytes": 3072,
+      "matrix_rows": 128,
+      "matrix_columns": 3072,
+      "database_payload_bytes": 393216,
+      "setup_payload_min_bytes": 15667284,
+      "online_request_bytes": 556,
+      "online_response_bytes": 12332,
+      "online_total_bytes": 12888,
+      "client_public_arrays_bytes": 16320000,
+      "estimated_peak_working_bytes": 109874944,
+      "peak_process_rss_bytes": 35848192,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 44686,
+      "client_setup_us": 1937,
+      "first_local_read_us": 441,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 306,
+      "subsequent_local_p95_us": 315,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15680172,
+          "cached_download_bytes": 393216,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15796164,
+          "cached_download_bytes": 393216,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 16956084,
+          "cached_download_bytes": 393216,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 28555284,
+          "cached_download_bytes": 393216,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 157961640,
+        "cached_download_bytes": 3932160,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-512-3072",
+      "status": "completed",
+      "records": 512,
+      "record_bytes": 3072,
+      "matrix_rows": 512,
+      "matrix_columns": 3072,
+      "database_payload_bytes": 1572864,
+      "setup_payload_min_bytes": 15667284,
+      "online_request_bytes": 2092,
+      "online_response_bytes": 12332,
+      "online_total_bytes": 14424,
+      "client_public_arrays_bytes": 18278400,
+      "estimated_peak_working_bytes": 120669184,
+      "peak_process_rss_bytes": 44761088,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 154956,
+      "client_setup_us": 4284,
+      "first_local_read_us": 682,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 486,
+      "subsequent_local_p95_us": 521,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15681708,
+          "cached_download_bytes": 1572864,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15811524,
+          "cached_download_bytes": 1572864,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 17109684,
+          "cached_download_bytes": 1572864,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 30091284,
+          "cached_download_bytes": 1572864,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 158115240,
+        "cached_download_bytes": 15728640,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-2048-3072",
+      "status": "completed",
+      "records": 2048,
+      "record_bytes": 3072,
+      "matrix_rows": 2048,
+      "matrix_columns": 3072,
+      "database_payload_bytes": 6291456,
+      "setup_payload_min_bytes": 15667284,
+      "online_request_bytes": 8236,
+      "online_response_bytes": 12332,
+      "online_total_bytes": 20568,
+      "client_public_arrays_bytes": 26112000,
+      "estimated_peak_working_bytes": 163846144,
+      "peak_process_rss_bytes": 79265792,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 612028,
+      "client_setup_us": 14301,
+      "first_local_read_us": 1513,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 1211,
+      "subsequent_local_p95_us": 1279,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15687852,
+          "cached_download_bytes": 6291456,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 15872964,
+          "cached_download_bytes": 6291456,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 17724084,
+          "cached_download_bytes": 6291456,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 36235284,
+          "cached_download_bytes": 6291456,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 158729640,
+        "cached_download_bytes": 62914560,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-8192-3072",
+      "status": "completed",
+      "records": 8192,
+      "record_bytes": 3072,
+      "matrix_rows": 4096,
+      "matrix_columns": 6144,
+      "database_payload_bytes": 25165824,
+      "setup_payload_min_bytes": 31334484,
+      "online_request_bytes": 16428,
+      "online_response_bytes": 24620,
+      "online_total_bytes": 41048,
+      "client_public_arrays_bytes": 52224000,
+      "estimated_peak_working_bytes": 323497984,
+      "peak_process_rss_bytes": 207192064,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 2912125,
+      "client_setup_us": 29353,
+      "first_local_read_us": 6193,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 3254,
+      "subsequent_local_p95_us": 3448,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 31375532,
+          "cached_download_bytes": 25165824,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 31744964,
+          "cached_download_bytes": 25165824,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 35439284,
+          "cached_download_bytes": 25165824,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 72382484,
+          "cached_download_bytes": 25165824,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 317449640,
+        "cached_download_bytes": 251658240,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-32768-3072",
+      "status": "completed",
+      "records": 32768,
+      "record_bytes": 3072,
+      "matrix_rows": 10923,
+      "matrix_columns": 9216,
+      "database_payload_bytes": 100663296,
+      "setup_payload_min_bytes": 47001684,
+      "online_request_bytes": 43736,
+      "online_response_bytes": 36908,
+      "online_total_bytes": 80644,
+      "client_public_arrays_bytes": 102708900,
+      "estimated_peak_working_bytes": 827197594,
+      "peak_process_rss_bytes": 612040704,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 15417723,
+      "client_setup_us": 73480,
+      "first_local_read_us": 14873,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 10160,
+      "subsequent_local_p95_us": 11778,
+      "max_reads_with_strictly_lower_estimated_bytes": 665,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 47082328,
+          "cached_download_bytes": 100663296,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 47808124,
+          "cached_download_bytes": 100663296,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 55066084,
+          "cached_download_bytes": 100663296,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 127645684,
+          "cached_download_bytes": 100663296,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 478081240,
+        "cached_download_bytes": 1006632960,
+        "pir_estimate_lower": true
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-131072-3072",
+      "status": "skipped",
+      "plan": {
+        "admitted": false,
+        "database_payload_bytes": 402653184,
+        "estimated_peak_working_bytes": 2593294534,
+        "hint_bytes": 109670400,
+        "matrix_columns": 21504,
+        "matrix_rows": 18725,
+        "max_plaintext_bits": 9,
+        "memory_budget_bytes": 1073741824,
+        "public_matrix_bytes": 95497500,
+        "record_bytes": 3072,
+        "reshape_k": 7,
+        "rows": 131072,
+        "server_u32_database_bytes": 1610612736,
+        "skip_reason": "estimated_memory_budget"
+      }
+    },
+    {
+      "case": "simple-index-524288-3072",
+      "status": "skipped",
+      "plan": {
+        "admitted": false,
+        "database_payload_bytes": 1610612736,
+        "estimated_peak_working_bytes": 9143564044,
+        "hint_bytes": 203673600,
+        "matrix_columns": 39936,
+        "matrix_rows": 40330,
+        "max_plaintext_bits": 8,
+        "memory_budget_bytes": 1073741824,
+        "public_matrix_bytes": 205683000,
+        "record_bytes": 3072,
+        "reshape_k": 13,
+        "rows": 524288,
+        "server_u32_database_bytes": 6442450944,
+        "skip_reason": "estimated_memory_budget"
+      }
+    },
+    {
+      "case": "simple-index-32-4096",
+      "status": "completed",
+      "records": 32,
+      "record_bytes": 4096,
+      "matrix_rows": 32,
+      "matrix_columns": 4096,
+      "database_payload_bytes": 131072,
+      "setup_payload_min_bytes": 20889684,
+      "online_request_bytes": 172,
+      "online_response_bytes": 16428,
+      "online_total_bytes": 16600,
+      "client_public_arrays_bytes": 21052800,
+      "estimated_peak_working_bytes": 120396224,
+      "peak_process_rss_bytes": 44417024,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 14273,
+      "client_setup_us": 1567,
+      "first_local_read_us": 519,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 338,
+      "subsequent_local_p95_us": 592,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 20906284,
+          "cached_download_bytes": 131072,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 21055684,
+          "cached_download_bytes": 131072,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 22549684,
+          "cached_download_bytes": 131072,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 37489684,
+          "cached_download_bytes": 131072,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 210556840,
+        "cached_download_bytes": 1310720,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-128-4096",
+      "status": "completed",
+      "records": 128,
+      "record_bytes": 4096,
+      "matrix_rows": 128,
+      "matrix_columns": 4096,
+      "database_payload_bytes": 524288,
+      "setup_payload_min_bytes": 20889684,
+      "online_request_bytes": 556,
+      "online_response_bytes": 16428,
+      "online_total_bytes": 16984,
+      "client_public_arrays_bytes": 21542400,
+      "estimated_peak_working_bytes": 123586304,
+      "peak_process_rss_bytes": 46825472,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 53597,
+      "client_setup_us": 2361,
+      "first_local_read_us": 630,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 398,
+      "subsequent_local_p95_us": 417,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 20906668,
+          "cached_download_bytes": 524288,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 21059524,
+          "cached_download_bytes": 524288,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 22588084,
+          "cached_download_bytes": 524288,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 37873684,
+          "cached_download_bytes": 524288,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 210595240,
+        "cached_download_bytes": 5242880,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-512-4096",
+      "status": "completed",
+      "records": 512,
+      "record_bytes": 4096,
+      "matrix_rows": 512,
+      "matrix_columns": 4096,
+      "database_payload_bytes": 2097152,
+      "setup_payload_min_bytes": 20889684,
+      "online_request_bytes": 2092,
+      "online_response_bytes": 16428,
+      "online_total_bytes": 18520,
+      "client_public_arrays_bytes": 23500800,
+      "estimated_peak_working_bytes": 136346624,
+      "peak_process_rss_bytes": 57327616,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 208667,
+      "client_setup_us": 4770,
+      "first_local_read_us": 970,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 602,
+      "subsequent_local_p95_us": 664,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 20908204,
+          "cached_download_bytes": 2097152,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 21074884,
+          "cached_download_bytes": 2097152,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 22741684,
+          "cached_download_bytes": 2097152,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 39409684,
+          "cached_download_bytes": 2097152,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 210748840,
+        "cached_download_bytes": 20971520,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-2048-4096",
+      "status": "completed",
+      "records": 2048,
+      "record_bytes": 4096,
+      "matrix_rows": 2048,
+      "matrix_columns": 4096,
+      "database_payload_bytes": 8388608,
+      "setup_payload_min_bytes": 20889684,
+      "online_request_bytes": 8236,
+      "online_response_bytes": 16428,
+      "online_total_bytes": 24664,
+      "client_public_arrays_bytes": 31334400,
+      "estimated_peak_working_bytes": 187387904,
+      "peak_process_rss_bytes": 98058240,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 827012,
+      "client_setup_us": 14803,
+      "first_local_read_us": 1830,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 1439,
+      "subsequent_local_p95_us": 1566,
+      "max_reads_with_strictly_lower_estimated_bytes": 0,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 20914348,
+          "cached_download_bytes": 8388608,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 21136324,
+          "cached_download_bytes": 8388608,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 23356084,
+          "cached_download_bytes": 8388608,
+          "pir_estimate_lower": false
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 45553684,
+          "cached_download_bytes": 8388608,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 211363240,
+        "cached_download_bytes": 83886080,
+        "pir_estimate_lower": false
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-8192-4096",
+      "status": "completed",
+      "records": 8192,
+      "record_bytes": 4096,
+      "matrix_rows": 8192,
+      "matrix_columns": 4096,
+      "database_payload_bytes": 33554432,
+      "setup_payload_min_bytes": 20889684,
+      "online_request_bytes": 32812,
+      "online_response_bytes": 16428,
+      "online_total_bytes": 49240,
+      "client_public_arrays_bytes": 62668800,
+      "estimated_peak_working_bytes": 391553024,
+      "peak_process_rss_bytes": 261685248,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 3348587,
+      "client_setup_us": 54399,
+      "first_local_read_us": 6042,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 4765,
+      "subsequent_local_p95_us": 4998,
+      "max_reads_with_strictly_lower_estimated_bytes": 257,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 20938924,
+          "cached_download_bytes": 33554432,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 21382084,
+          "cached_download_bytes": 33554432,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 25813684,
+          "cached_download_bytes": 33554432,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 70129684,
+          "cached_download_bytes": 33554432,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 213820840,
+        "cached_download_bytes": 335544320,
+        "pir_estimate_lower": true
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-32768-4096",
+      "status": "completed",
+      "records": 32768,
+      "record_bytes": 4096,
+      "matrix_rows": 10923,
+      "matrix_columns": 12288,
+      "database_payload_bytes": 134217728,
+      "setup_payload_min_bytes": 62668884,
+      "online_request_bytes": 43736,
+      "online_response_bytes": 49196,
+      "online_total_bytes": 92932,
+      "client_public_arrays_bytes": 118376100,
+      "estimated_peak_working_bytes": 1034137754,
+      "peak_process_rss_bytes": 777568256,
+      "rss_above_preflight_estimate": false,
+      "server_setup_us": 23826962,
+      "client_setup_us": 74664,
+      "first_local_read_us": 18189,
+      "subsequent_sample_count": 31,
+      "subsequent_local_p50_us": 13105,
+      "subsequent_local_p95_us": 13927,
+      "max_reads_with_strictly_lower_estimated_bytes": 769,
+      "workload_models": [
+        {
+          "reads_per_generation": 1,
+          "generations": 1,
+          "pir_min_estimated_bytes": 62761816,
+          "cached_download_bytes": 134217728,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 10,
+          "generations": 1,
+          "pir_min_estimated_bytes": 63598204,
+          "cached_download_bytes": 134217728,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 100,
+          "generations": 1,
+          "pir_min_estimated_bytes": 71962084,
+          "cached_download_bytes": 134217728,
+          "pir_estimate_lower": true
+        },
+        {
+          "reads_per_generation": 1000,
+          "generations": 1,
+          "pir_min_estimated_bytes": 155600884,
+          "cached_download_bytes": 134217728,
+          "pir_estimate_lower": false
+        }
+      ],
+      "full_rebuild_ten_generation_model": {
+        "reads_per_generation": 10,
+        "generations": 10,
+        "pir_min_estimated_bytes": 635982040,
+        "cached_download_bytes": 1342177280,
+        "pir_estimate_lower": true
+      },
+      "queries_completed": 32
+    },
+    {
+      "case": "simple-index-131072-4096",
+      "status": "skipped",
+      "plan": {
+        "admitted": false,
+        "database_payload_bytes": 536870912,
+        "estimated_peak_working_bytes": 3343343924,
+        "hint_bytes": 125337600,
+        "matrix_columns": 24576,
+        "matrix_rows": 21846,
+        "max_plaintext_bits": 9,
+        "memory_budget_bytes": 1073741824,
+        "public_matrix_bytes": 111414600,
+        "record_bytes": 4096,
+        "reshape_k": 6,
+        "rows": 131072,
+        "server_u32_database_bytes": 2147483648,
+        "skip_reason": "estimated_memory_budget"
+      }
+    },
+    {
+      "case": "simple-index-524288-4096",
+      "status": "skipped",
+      "plan": {
+        "admitted": false,
+        "database_payload_bytes": 2147483648,
+        "estimated_peak_working_bytes": 11986694354,
+        "hint_bytes": 229785600,
+        "matrix_columns": 45056,
+        "matrix_rows": 47663,
+        "max_plaintext_bits": 8,
+        "memory_budget_bytes": 1073741824,
+        "public_matrix_bytes": 243081300,
+        "record_bytes": 4096,
+        "reshape_k": 11,
+        "rows": 524288,
+        "server_u32_database_bytes": 8589934592,
+        "skip_reason": "estimated_memory_budget"
+      }
+    }
+  ]
+}

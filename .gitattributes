@@ -4,3 +4,6 @@ experiments/EXP-007-consensus-root/raw/*.log -whitespace
 
 # PDFs are distributable binary artifacts, even when their streams use ASCII encoding.
 *.pdf binary
+
+# Preserve byte-exact scale-run and verification output.
+experiments/EXP-008-synthetic-pir-scale/raw/*.log -whitespace

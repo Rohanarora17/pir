@@ -1,0 +1,118 @@
+verified unmodified IKPIR source fcfb2b540c1cfa92c2de5ec818db3aa9fc817395
+test_cache_is_charged_once_per_generation_not_per_query (test_accounting.AccountingTests.test_cache_is_charged_once_per_generation_not_per_query) ... ok
+test_equality_is_not_reported_as_an_advantage (test_accounting.AccountingTests.test_equality_is_not_reported_as_an_advantage) ... ok
+test_nearest_rank_and_invalid_samples (test_accounting.AccountingTests.test_nearest_rank_and_invalid_samples) ... ok
+test_new_snapshots_charge_both_paths_for_each_full_rebuild (test_accounting.AccountingTests.test_new_snapshots_charge_both_paths_for_each_full_rebuild) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+   Compiling pvrpc-pir-scale v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-008-synthetic-pir-scale/probe)
+    Finished `test` profile [optimized + debuginfo] target(s) in 0.59s
+     Running unittests src/lib.rs (/private/tmp/pvrpc-pir-target/debug/deps/pvrpc_pir_scale-15f6fecb1952c6a8)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (/private/tmp/pvrpc-pir-target/debug/deps/pvrpc_pir_scale-fd8223b71e07c3bc)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scaling.rs (/private/tmp/pvrpc-pir-target/debug/deps/scaling-d826ef914041ddb6)
+
+running 3 tests
+test deterministic_payload_and_samples_distinguish_rows_and_cover_edges ... ok
+test resource_and_wire_limits_precede_any_database_allocation ... ok
+test default_security_and_partial_reshape_rows_decode_correctly ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.47s
+
+   Doc-tests pvrpc_pir_scale
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling generic-array v0.14.7
+    Checking alloy-rlp v0.3.16
+    Checking derive_more v2.1.1
+    Checking serde v1.0.229
+   Compiling serde_json v1.0.154
+    Checking cpufeatures v0.2.17
+    Checking ruint v1.17.2
+    Checking pvrpc-protocol v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/protocol)
+    Checking alloy-primitives v1.7.3
+    Checking block-buffer v0.10.4
+    Checking crypto-common v0.1.7
+    Checking digest v0.10.7
+    Checking sha2 v0.10.9
+    Checking eth_trie v0.6.1
+    Checking pvrpc-verifier v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/verifier)
+    Checking pvrpc-record-geometry v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-005-record-geometry/probe)
+    Checking pvrpc-pir-baseline v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/probe)
+    Checking pvrpc-pir-scale v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-008-synthetic-pir-scale/probe)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.18s
+   Compiling unicode-ident v1.0.27
+   Compiling version_check v0.9.5
+   Compiling serde_json v1.0.154
+   Compiling cpufeatures v0.2.17
+   Compiling proc-macro2 v1.0.107
+   Compiling generic-array v0.14.7
+   Compiling quote v1.0.47
+   Compiling syn v2.0.119
+   Compiling syn v3.0.9
+   Compiling serde_derive v1.0.229
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling alloy-rlp-derive v0.3.16
+   Compiling derive_more-impl v2.1.1
+   Compiling serde v1.0.229
+   Compiling alloy-rlp v0.3.16
+   Compiling pvrpc-protocol v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/protocol)
+   Compiling derive_more v2.1.1
+   Compiling ruint v1.17.2
+   Compiling alloy-primitives v1.7.3
+   Compiling eth_trie v0.6.1
+   Compiling pvrpc-verifier v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/crates/verifier)
+   Compiling pvrpc-record-geometry v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-005-record-geometry/probe)
+   Compiling pvrpc-pir-baseline v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-006-pir-baseline/probe)
+   Compiling pvrpc-pir-scale v0.1.0 (/Users/rohan/Downloads/cs6666-blockchain-assignment-1/private-verifiable-rpc/experiments/EXP-008-synthetic-pir-scale/probe)
+    Finished `release` profile [optimized] target(s) in 4.40s
+completed simple-index-32-3072
+completed simple-index-128-3072
+completed simple-index-512-3072
+completed simple-index-2048-3072
+completed simple-index-8192-3072
+completed simple-index-32768-3072
+skipped simple-index-131072-3072: estimated_memory_budget
+skipped simple-index-524288-3072: estimated_memory_budget
+completed simple-index-32-4096
+completed simple-index-128-4096
+completed simple-index-512-4096
+completed simple-index-2048-4096
+completed simple-index-8192-4096
+completed simple-index-32768-4096
+skipped simple-index-131072-4096: estimated_memory_budget
+skipped simple-index-524288-4096: estimated_memory_budget
+simple-index-32-3072: database=98304 setup_min=15667284 online=12504 last_lower_read=0 p50_us=344 rss=33685504
+simple-index-128-3072: database=393216 setup_min=15667284 online=12888 last_lower_read=0 p50_us=306 rss=35848192
+simple-index-512-3072: database=1572864 setup_min=15667284 online=14424 last_lower_read=0 p50_us=486 rss=44761088
+simple-index-2048-3072: database=6291456 setup_min=15667284 online=20568 last_lower_read=0 p50_us=1211 rss=79265792
+simple-index-8192-3072: database=25165824 setup_min=31334484 online=41048 last_lower_read=0 p50_us=3254 rss=207192064
+simple-index-32768-3072: database=100663296 setup_min=47001684 online=80644 last_lower_read=665 p50_us=10160 rss=612040704
+simple-index-131072-3072: skipped
+simple-index-524288-3072: skipped
+simple-index-32-4096: database=131072 setup_min=20889684 online=16600 last_lower_read=0 p50_us=338 rss=44417024
+simple-index-128-4096: database=524288 setup_min=20889684 online=16984 last_lower_read=0 p50_us=398 rss=46825472
+simple-index-512-4096: database=2097152 setup_min=20889684 online=18520 last_lower_read=0 p50_us=602 rss=57327616
+simple-index-2048-4096: database=8388608 setup_min=20889684 online=24664 last_lower_read=0 p50_us=1439 rss=98058240
+simple-index-8192-4096: database=33554432 setup_min=20889684 online=49240 last_lower_read=257 p50_us=4765 rss=261685248
+simple-index-32768-4096: database=134217728 setup_min=62668884 online=92932 last_lower_read=769 p50_us=13105 rss=777568256
+simple-index-131072-4096: skipped
+simple-index-524288-4096: skipped

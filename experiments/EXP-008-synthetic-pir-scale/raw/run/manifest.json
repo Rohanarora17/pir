@@ -1,0 +1,89 @@
+{
+  "experiment_id": "EXP-008",
+  "research_questions": [
+    "RQ-005",
+    "RQ-008"
+  ],
+  "claim_type": "synthetic result",
+  "started_at": "2026-10-15T18:39:06.021852+00:00",
+  "completed_at": "2026-10-15T18:39:56.635130+00:00",
+  "software_revisions": {
+    "project_base_revision": "3d8a6501af4f041f074cf4750ef840fbeca0d7bc",
+    "rustc": "rustc 1.95.0 (59807616e 2026-04-14)",
+    "cargo": "cargo 1.95.0 (f2d3ce0bd 2026-03-21)",
+    "tree_state": "?? ../../docs/superpowers/plans/2026-10-15-day-4-proof-corpus.md\n?? ./",
+    "upstream_revision": "fcfb2b540c1cfa92c2de5ec818db3aa9fc817395"
+  },
+  "machine": {
+    "operating_system": "macOS-15.1-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "logical_cores_available": 14,
+    "logical_cores_used": 1,
+    "cpu_model": "arm",
+    "host_ram": "not available in sandbox",
+    "gpu_used": false
+  },
+  "inputs": {
+    "generator": "SplitMix64-v1 low byte, seed 0x505652504353434c + (row << 32 | offset)",
+    "ethereum_state": "none; synthetic bytes only",
+    "source_sha256": {
+      "probe/src/lib.rs": "bce3b23434fd294e110ef8780dacb5d56fecff9eb8f5f5b49be5ab6afd61e104",
+      "probe/src/main.rs": "c7362ed8b3d66fa4696c5723d913167b76bec19f3653e3aa7ab6ebcb22c3dd3c",
+      "probe/Cargo.lock": "e3564a84951b63f0f67b1a96e20a226d0abbbdf65143d51085241aff96388bea",
+      "run_cases.py": "6bdee78bbe151eb6175e22c22d741bbfbba5de4210644652f76d1857c26909ca",
+      "summarize.py": "56b558a5cad255f12748a323c09dd7f4d8f6f3d57a92ec6f64e20cfc86cd797d",
+      "commands.sh": "bcd82f342cf13ef3463d21ec7b1098278b22882e6de764c9853f17e2cfad6658"
+    },
+    "binary_sha256": "aa5642840f8586fa527a558e72e81be651a1e520e2d5d4f29e5957b367847061",
+    "upstream_archive_sha256": "c271a8be463a94d62467f9cae4dd17014aa2bb983bb3f6e0f0ed8877e41efe57"
+  },
+  "parameters": {
+    "scheme": "SimplePIR direct index",
+    "rows": [
+      32,
+      128,
+      512,
+      2048,
+      8192,
+      32768,
+      131072,
+      524288
+    ],
+    "record_bytes": [
+      3072,
+      4096
+    ],
+    "queries_per_case": 32,
+    "memory_budget_bytes": 1073741824,
+    "case_timeout_seconds": 180,
+    "security": {
+      "lwe_dimension": 1275,
+      "sigma": 6.4,
+      "ciphertext_modulus_log2": 32,
+      "plaintext_bits": 8,
+      "upstream_correctness_kappa": 40
+    },
+    "client_state_size": "per-case hint plus expanded public matrix; not RSS",
+    "preprocessing_generation": "one independent cold setup per case, no update protocol",
+    "transport": "none; bounded local frames",
+    "setup_bytes": "canonical minimum estimates",
+    "build_profile": "release",
+    "query_policy": "sequential, no precompute queues"
+  },
+  "metrics": [
+    {
+      "name": "setup_and_read_times",
+      "unit": "microseconds",
+      "raw_result_file": "*.json"
+    },
+    {
+      "name": "setup_message_arrays_and_RSS",
+      "unit": "bytes",
+      "raw_result_file": "*.json and processes.json"
+    }
+  ],
+  "case_status_counts": {
+    "completed": 12,
+    "skipped": 4
+  }
+}
