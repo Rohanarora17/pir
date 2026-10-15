@@ -117,3 +117,9 @@ to evaluation emphasis: the existing corpus is a functional fixture. RQ-008 now 
 tests, real versus synthetic corpus evidence, setup amortization and generation-update costs.
 Do not present the small-corpus bandwidth result as the architectural verdict. This records Rohan's
 reasoning contribution; it does not claim that larger-scale performance has been demonstrated.
+
+## Delegation preference: 2026-10-16
+
+Rohan explicitly requested that sub-agents and sub-agent skills be used only when he asks. Work
+directly by default. This preference does not change the accepted architecture or record a new
+learning milestone.

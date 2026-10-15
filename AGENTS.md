@@ -14,6 +14,7 @@ consequential decisions, interpret evidence and own meaningful small tasks.
 - Discuss new consequential choices with Rohan before treating them as accepted. Continue routine
   implementation and independent evidence gathering within existing authorization; do not ask for
   repeated permission for ordinary coding.
+- Do not use sub-agents or delegation skills unless Rohan explicitly asks.
 - Implement in understandable slices. Walk through important paths using a real input, including
   checks, outputs, failure cases and the guarantees still missing.
 - Offer a meaningful participation task at each milestone: predict a result, select an adversarial
