@@ -410,6 +410,12 @@ resource-budget skips. It finds conditional estimated communication savings, wit
 and substantial client arrays. Real metadata, network costs, generation transitions and the
 bundled-proof/shared-node comparison remain pending. The decision criterion is not yet met.
 
+[EXP-009](../experiments/EXP-009-guarded-local-scale/summary.md) extends the local synthetic
+sweep to 131,072 records at both widths, with 64 correct sampled reads under a live memory
+watchdog. Two remaining 524,288-record cases are deferred for remote-VM tests. Client public
+arrays are below the full payload size at the completed larger points, while setup/network and
+real metadata limits still prevent a practical end-to-end conclusion.
+
 ### Linked decisions
 
 None yet.

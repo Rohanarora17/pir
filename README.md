@@ -65,6 +65,10 @@ rules have supporting evidence.
   appear for some workloads, with significant client-memory costs. Real representation and
   network comparisons remain pending.
 
+- [`EXP-009`](experiments/EXP-009-guarded-local-scale/summary.md) extends the synthetic sweep to
+  131,072 records at both widths, with 64 correct reads and live laptop memory guards. Remaining
+  524,288-record cases are deferred for remote-VM testing.
+
 ## Run the foundation
 
 ```bash

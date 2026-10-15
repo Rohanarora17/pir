@@ -59,6 +59,10 @@ Ethereum results use separate experiment identifiers.
   with fair once-per-snapshot caching, setup/online/client-memory accounting and explicit skipped
   sizes. First Day 9 slice, not a real-proof representation or live-network comparison.
 
+- [`EXP-009`](EXP-009-guarded-local-scale/): guarded laptop extension at 131,072 records,
+  with live pressure/RSS/swap monitoring, 64 correct sampled reads and two larger cases deferred
+  for remote-VM testing. Fixed security parameters, synthetic data only.
+
 ## Security and privacy
 
 Never store provider API keys, credentials, signing keys, private wallet data or unredacted personal

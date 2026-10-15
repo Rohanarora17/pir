@@ -23,7 +23,11 @@
   384 correct sampled reads and four explicit memory-budget skips. It finds workload-dependent
   estimated byte savings and significant client public-array costs. Real representation, setup
   transport and network comparisons are still pending.
-- Next investigation: real bundled-proof versus shared-node retrieval costs
+- EXP-009 extends the guarded local sweep to 131,072 records at both widths (64 correct reads),
+  with normal sampled memory pressure and no growth in swap usage. The 524,288-record cases
+  remain deferred for remote-VM testing.
+- Next investigation: remaining scale points in a remote VM, then real bundled-proof versus
+  shared-node retrieval costs
 - Evaluation scope: the 32-record corpus establishes functional correctness. Day 9 must add a
   resource-bounded scale sweep; the tiny-corpus download result does not decide PIR suitability.
 
